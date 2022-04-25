@@ -221,6 +221,7 @@ import ChartSubTitle from './chartChips/chart/ChartSubTitle'
 import ChartCursor from './chartChips/chart/ChartCursor'
 import ChartLegend from './chartChips/chart/ChartLegend'
 import ChartAxis from './chartChips/chart/ChartAxis'
+import i18n from "@/i18n";
 
 export default {
   name: "ChartSetting",
@@ -239,7 +240,7 @@ export default {
     },
     lang: {
       type: String,
-      default: "cn",
+      default: "en",
     },
   },
   data() {
@@ -584,7 +585,7 @@ export default {
       ) {
         if (this.currentChartDataCache.title != null) {
           ret.fix.push({
-            title: "x轴",
+            title: i18n.t('chartSetting.axis.x'),
             type: valueType["string"],
             field: this.currentChartDataCache.title.text,
           });
@@ -594,7 +595,7 @@ export default {
           for (var i = 0; i < this.currentChartDataCache.label.length; i++) {
             var trueIndex = chartDataSeriesOrder[i];
             ret.change[trueIndex] = {
-              title: "系列" + (trueIndex + 1),
+              title: i18n.t('chartSetting.collection') + (trueIndex + 1),
               index: trueIndex,
               type: valueType[this.currentChartDataCache.series_tpye[i]],
               field: this.currentChartDataCache.label[i],

@@ -104,16 +104,7 @@
 
 <script>
 import * as t from "@/utils/importUtil";
-import {
-  fontSizeOption,
-  lineStyleOption,
-  lineWeightOption,
-  posOption,
-  ratioOption,
-  digitOption,
-} from "@/data/chartJson";
-import transCN from "@/data/cn";
-import transEN from "@/data/en";
+import i18n from "@/i18n";
 
 export default {
   components: {
@@ -131,35 +122,24 @@ export default {
   data() {
     return {
       cursor: {}, //鼠标提示设置
-      fontSizeOption: t.deepCopy(fontSizeOption),
-      lineStyleOption: t.deepCopy(lineStyleOption),
-      lineWeightOption: t.deepCopy(lineWeightOption),
-      posOption: t.deepCopy(posOption),
-      ratioOption: t.deepCopy(ratioOption),
-      digitOption: t.deepCopy(digitOption),
-      triggerTypeArr: [
-        { value: "item", label: "数据项图形触发" },
-        { value: "axis", label: "坐标轴触发" },
-      ],
-      axisPointerArr: [
-        { value: "line", label: "直线指示器" },
-        { value: "shadow", label: "阴影指示器" },
-        { value: "cross", label: "十字准星指示器" },
-      ],
-      triggerMethodArr: [
-        { value: "mousemove", label: "鼠标移动" },
-        { value: "click", label: "单击左键/鼠标划过" },
-        { value: "mousemove|click", label: "同时触发" },
-      ],
+      fontSizeOption: i18n.t('fontSIzeOption'),
+      lineStyleOption: i18n.t('lineStyleOption'),
+      lineWeightOption: i18n.t('lineWeightOption'),
+      posOption: i18n.t('posOption'),
+      ratioOption: i18n.t('ratioOption'),
+      digitOption: i18n.t('digitOption'),
+      triggerTypeArr: i18n.t('chartCursor.triggerTypeArr'),
+      axisPointerArr: i18n.t('chartCursor.axisPointerArr'),
+      triggerMethodArr: i18n.t('chartCursor.triggerMethodArr'),
       setItem: {},
     };
   },
   mounted() {
-    if (this.lang == "ch") {
+    /*if (this.lang == "ch") {
       this.setItem = transCN["chartCursor"];
       return;
-    }
-    this.setItem = transEN["chartCursor"];
+    }*/
+    this.setItem = i18n.t('chartCursor');
   },
   watch: {
     cursorOption: {
@@ -183,11 +163,11 @@ export default {
       immediate: true,
     },
     lang(val) {
-      if (val == "ch") {
+      /*if (val == "ch") {
         this.setItem = transCN["chartCursor"];
         return;
-      }
-      this.setItem = transEN["chartCursor"];
+      }*/
+      this.setItem = i18n.t('chartCursor');
     },
   },
   computed: {

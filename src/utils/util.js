@@ -1,4 +1,5 @@
 import { baseComponent } from '@/data/chartJson'
+import i18n from "@/i18n";
 /**
  * 深度克隆数据,包括对象，数组，map
  * @param {*} obj 对象，数组，map
@@ -654,7 +655,7 @@ function getChartDataCache(
                 if (rtitle == null) {
                     ret.title = {
                         //标题不变
-                        text: '图表标题' //标题直接使用 "图表标题"
+                        text: i18n.t('chartSetting.chartTitle') //标题直接使用 "图表标题"
                     }
 
                     for (var c = 0; c <= content.column[1] - content.column[0]; c++) {
@@ -718,7 +719,7 @@ function getChartDataCache(
                     ctitleData = []
                 if (ctitle == null) {
                     for (var r = 0; r <= content.row[1] - content.row[0]; r++) {
-                        ctitleData.push('系列' + (r + 1)) //用系列1、系列2、系列3 样式表示
+                        ctitleData.push(i18n.t('chartSetting.collection') + (r + 1)) //用系列1、系列2、系列3 样式表示
                     }
                     ret.label = ctitleData
                 }
@@ -756,7 +757,7 @@ function getChartDataCache(
                 if (rtitle == null) {
                     ret.title = {
                         //标题不变
-                        text: '图表标题' //标题直接使用 "图表标题"
+                        text: i18n.t('chartSetting.chartTitle') //标题直接使用 "图表标题"
                     }
 
                     for (var c = 0; c <= content.column[1] - content.column[0]; c++) {
@@ -770,7 +771,7 @@ function getChartDataCache(
                     ctitleData = []
                 if (ctitle == null) {
                     for (var r = 0; r <= content.row[1] - content.row[0]; r++) {
-                        ctitleData.push('系列' + (r + 1)) //用系列1、系列2、系列3 样式表示
+                        ctitleData.push(i18n.t('chartSetting.collection') + (r + 1)) //用系列1、系列2、系列3 样式表示
                     }
                     ret.label = ctitleData
                 }
@@ -890,11 +891,11 @@ function getChartDataCache(
                     rtitleData = []
                 if (rtitle == null) {
                     ret.title = {
-                        text: '图表标题' //标题直接使用 "图表标题"
+                        text: i18n.t('chartSetting.chartTitle') //标题直接使用 "图表标题"
                     }
 
                     for (var c = 0; c <= content.column[1] - content.column[0]; c++) {
-                        rtitleData.push('系列' + (c + 1)) //行标题用系列1、系列2、系列3 样式表示
+                        rtitleData.push(i18n.t('chartSetting.collection') + (c + 1)) //行标题用系列1、系列2、系列3 样式表示
                     }
                     ret.label = rtitleData
                 }
@@ -908,7 +909,7 @@ function getChartDataCache(
                     rtitleData = []
                 if (rtitle != null) {
                     ret.title = {
-                        text: '图表标题' //标题直接使用 "图表标题"
+                        text: i18n.t('chartSetting.chartTitle') //标题直接使用 "图表标题"
                     }
 
                     for (var c = rtitle.column[0]; c <= rtitle.column[1]; c++) {
@@ -986,11 +987,11 @@ function getChartDataCache(
                     rtitleData = []
                 if (rtitle == null) {
                     ret.title = {
-                        text: '图表标题' //标题直接使用 "图表标题"
+                        text: i18n.t('chartSetting.chartTitle') //标题直接使用 "图表标题"
                     }
 
                     for (var c = 0; c <= content.column[1] - content.column[0]; c++) {
-                        rtitleData.push('系列' + (c + 1)) //用系列1、系列2、系列3 样式表示
+                        rtitleData.push(i18n.t('chartSetting.collection') + (c + 1)) //用系列1、系列2、系列3 样式表示
                     }
                     ret.label = rtitleData
                 }

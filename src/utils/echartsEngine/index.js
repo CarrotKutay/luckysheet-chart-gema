@@ -51,8 +51,8 @@ const echartsEngine = function (chartOptions) {
         delete option.yAxis
     }
 
-    console.dir(option)
-    console.dir(JSON.stringify(option))
+    /*console.dir(option)
+    console.dir(JSON.stringify(option))*/
     return option;
 }
 

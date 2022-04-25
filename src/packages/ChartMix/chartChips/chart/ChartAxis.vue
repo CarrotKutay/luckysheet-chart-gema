@@ -10,7 +10,7 @@
     </chart-base-select>
     <!-- 是否显示坐标轴 -->
     <chart-base-switch :switchValue.sync="series.show">
-      <div slot="title">{{series.name}}</div>
+      <div slot="title">{{setItem.show}}</div>
     </chart-base-switch>
 
     <div v-show="series.show">
@@ -25,7 +25,7 @@
           <div slot="title">{{setItem.label}}</div>
         </chart-base-label>
         <!-- 文本对齐方式 -->
-        <chart-base-select :selectOption="fzPosOption" :selectValue.sync="series.title.fzPosition">
+        <chart-base-select :selectOption="setItem.fzPosOption" :selectValue.sync="series.title.fzPosition">
           <div slot="select">{{setItem.align}}</div>
         </chart-base-select>
       </div>
@@ -40,10 +40,10 @@
         :hideCol="true"
         :max="10"
         :baseSliderOption.sync="series.tickLabel.optimize"
-        :unit="'个'"
+        :unit="tickUnit"
         :content="setItem.content"
       >
-        <div slot="title">{{setItem.intenval}}</div>
+        <div slot="title">{{setItem.interval}}</div>
       </chart-base-slider>
 
       <div v-show="series.title.text">
@@ -101,7 +101,7 @@
       </chart-base-switch>
 
       <!-- 刻度位置 -->
-      <chart-base-select :selectOption="orient" :selectValue.sync="series.tick.position">
+      <chart-base-select :selectOption="setItem.orient" :selectValue.sync="series.tick.position">
         <div slot="select">{{setItem.position}}</div>
       </chart-base-select>
 
@@ -174,11 +174,11 @@
           <div slot="input">{{setItem.max}}</div>
         </chart-base-input>
         <!-- 数值缩放比例 -->
-        <chart-base-select :selectOption="ratioOption" :selectValue.sync="series.tickLabel.ratio">
+        <chart-base-select :selectOption="setItem.ratioOption" :selectValue.sync="series.tickLabel.ratio">
           <div slot="select">{{setItem.ratio}}</div>
         </chart-base-select>
         <!-- 小数位数 -->
-        <chart-base-select :selectOption="digitOption" :selectValue.sync="series.tickLabel.digit">
+        <chart-base-select :selectOption="setItem.digitOption" :selectValue.sync="series.tickLabel.digit">
           <div slot="select">{{setItem.digit}}</div>
         </chart-base-select>
       </div>
@@ -210,7 +210,7 @@
           <div slot="title">{{setItem.netWidth}}</div>
         </chart-base-slider>
         <!-- 网格线类型 -->
-        <chart-base-select :selectOption="lineStyleOption" :selectValue.sync="series.netLine.type">
+        <chart-base-select :selectOption="setItem.lineStyleOption" :selectValue.sync="series.netLine.type">
           <div slot="select">{{setItem.netType}}</div>
         </chart-base-select>
         <!-- 网格线颜色 -->
@@ -224,7 +224,7 @@
         </el-row>
         <!-- 网格线分割间隔数 -->
         <chart-base-select
-          :selectOption="intervalOption"
+          :selectOption="setItem.intervalOption"
           :selectValue.sync="series.netLine.interval.value"
         >
           <div slot="select">{{setItem.netInterval}}</div>
@@ -275,15 +275,7 @@
 
 <script>
 import * as t from "@/utils/importUtil";
-import {
-  fontSizeOption,
-  lineStyleOption,
-  intervalOption,
-  digitOption,
-  ratioOption,
-} from "@/data/chartJson";
-import transCN from "@/data/cn";
-import transEN from "@/data/en";
+import i18n from "@/i18n";
 
 export default {
   name: "ChartXaxis",
@@ -293,7 +285,7 @@ export default {
     router: String,
     lang: {
       type: String,
-      default: "cn",
+      default: "en",
     },
   },
   components: {
@@ -303,20 +295,14 @@ export default {
     return {
       axis: {},
       series: {}, //具体坐标轴配置
-      fontSizeOption: "",
-      lineStyleOption: "",
-      ratioOption: "",
-      digitOption: "",
-      fzPosOption: [
-        { value: "middle", label: "居中" },
-        { value: "start", label: "头部" },
-        { value: "end", label: "尾部" },
-        { value: "hidden", label: "隐藏" },
-      ],
-      orient: [
-        { label: "朝内", value: "inside" },
-        { label: "朝外", value: "outside" },
-      ],
+      fontSizeOption: i18n.t(`fontSizeList`),
+      lineStyleOption: i18n.t(`chartAxis.lineStyleOption`),
+      ratioOption: i18n.t(`ratioOption`),
+      digitOption: i18n.t(`digitOption`),
+      fzPosOption: i18n.t('chartAxis.fzPosOption'),
+      intervalOption: i18n.t(`intervalOption`),
+      orient: i18n.t('chartAxis.orient'),
+      tickUnit: i18n.t('chartAxis.tickUnit.custom'),
       formatRotation: function (val) {
         return val + " °";
       },
@@ -324,11 +310,7 @@ export default {
     };
   },
   mounted() {
-    if (this.lang == "ch") {
-      this.setItem = transCN["chartAxis"];
-      return;
-    }
-    this.setItem = transEN["chartAxis"];
+    this.setItem = i18n.t("chartAxis");
   },
   watch: {
     axisOption: {
@@ -338,11 +320,6 @@ export default {
         }
         this.axis = t.deepCopy(this.axisOption);
         this.series = this.axis[newVal.axisType];
-        this.fontSizeOption = t.deepCopy(fontSizeOption);
-        this.lineStyleOption = t.deepCopy(lineStyleOption);
-        this.intervalOption = t.deepCopy(intervalOption);
-        this.ratioOption = t.deepCopy(ratioOption);
-        this.digitOption = t.deepCopy(digitOption);
       },
       immediate: true,
       deep: true,
@@ -357,12 +334,8 @@ export default {
       deep: true,
       immediate: true,
     },
-    lang(val) {
-      if (val == "ch") {
-        this.setItem = transCN["chartAxis"];
-        return;
-      }
-      this.setItem = transEN["chartAxis"];
+    lang() {
+      this.setItem = i18n.t(`chartAxis`);
     },
   },
   computed: {
@@ -374,35 +347,16 @@ export default {
     },
     axisGroup() {
       if (this.chartType == "bar" && this.chartStyle != "compare") {
-        return [
-          { value: "xAxisDown", label: "Y轴(左侧垂直)" },
-          { value: "xAxisUp", label: "Y轴(左侧垂直)" },
-          { value: "yAxisLeft", label: "X轴(下方水平)" },
-          { value: "yAxisRight", label: "X轴(上方水平)" },
-        ];
+        return i18n.t(`chartAxis.axisGroup.barAndCompare`);
       } else if (this.chartStyle == "compare") {
-        return [
-          { value: "xAxisDown", label: "Y轴(右侧坐标轴)" },
-          { value: "xAxisUp", label: "Y轴(左侧坐标轴)" },
-          { value: "yAxisLeft", label: "X轴(右侧坐标轴)" },
-          { value: "yAxisRight", label: "X轴(左侧坐标轴)" },
-        ];
+        return i18n.t(`chartAxis.axisGroup.compare`);;
       } else {
-        return [
-          { value: "xAxisDown", label: "X轴(下方水平)" },
-          { value: "xAxisUp", label: "X轴(上方水平)" },
-          { value: "yAxisLeft", label: "Y轴(左侧垂直)" },
-          { value: "yAxisRight", label: "Y轴(右侧垂直)" },
-        ];
+        return i18n.t(`chartAxis.axisGroup.default`);;
       }
     },
     showLabel() {
-      if (
-        (this.chartType == "bar" && this.axis.axisType.slice(0, 1) == "x") ||
-        (this.chartType != "bar" && this.axis.axisType.slice(0, 1) == "y")
-      ) {
-        return true;
-      }
+      return (this.chartType === "bar" && this.axis.axisType.slice(0, 1) === "x") ||
+          (this.chartType !== "bar" && this.axis.axisType.slice(0, 1) === "y");
     },
   },
   methods: {

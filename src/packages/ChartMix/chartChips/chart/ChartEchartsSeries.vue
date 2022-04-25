@@ -707,6 +707,7 @@
 
 <script>
 import * as t from '@/utils/importUtil'
+import i18n from '@/i18n'
 
 export default {
   data() {
@@ -776,164 +777,23 @@ export default {
         start: false,
         time: "3"
       },
-      lineWidthOption: [
-        { value: 1, label: "1px" },
-        { value: 2, label: "2px" },
-        { value: 3, label: "3px" },
-        { value: 4, label: "4px" },
-        { value: 5, label: "5px" },
-        { value: 6, label: "6px" },
-        { value: 7, label: "7px" },
-        { value: 8, label: "8px" },
-        { value: "custom", label: "自定义" }
-      ],
-      lineTypeOption: [
-        { value: "solid", label: "实线" },
-        { value: "dashed", label: "虚线" },
-        { value: "dotted", label: "点线" }
-      ],
-      symbolSizeOption: [
-        { value: 2, label: "2px" },
-        { value: 3, label: "3px" },
-        { value: 6, label: "6px" },
-        { value: 8, label: "8px" },
-        { value: 10, label: "10px" },
-        { value: 12, label: "12px" },
-        { value: 14, label: "14px" },
-        { value: 16, label: "16px" },
-        { value: "custom", label: "自定义" }
-      ],
-      symbolOption: [
-        { value: "emptyCircle", label: "空心圆" },
-        { value: "circle", label: "圆" },
-        { value: "emptyRect", label: "空心矩形" },
-        { value: "rect", label: "矩形" },
-        { value: "roundRect", label: "圆角矩形" },
-        { value: "emptyTriangle", label: "空心三角" },
-        { value: "triangle", label: "三角形" },
-        { value: "emptyDiamond", label: "空心菱形" },
-        { value: "diamond", label: "菱形" },
-        { value: "pin", label: "标注" },
-        { value: "arrow", label: "箭头" },
-        { value: "line", label: "直线" }
-      ],
-      symbolOption1: [
-        { value: "circle", label: "圆" },
-        { value: "rect", label: "矩形" },
-        { value: "roundRect", label: "圆角矩形" },
-        { value: "triangle", label: "三角形" },
-        { value: "diamond", label: "菱形" },
-        { value: "pin", label: "标注" },
-        { value: "arrow", label: "箭头" },
-        { value: "none", label: "无" }
-      ],
-      barWidthOption: [
-        { value: null, label: "自适应" },
-        { value: 10, label: "窄" },
-        { value: 30, label: "一般" },
-        { value: 50, label: "宽" },
-        { value: "custom", label: "自定义" }
-      ],
-      barMinHeightOption: [
-        { value: 0, label: "默认" },
-        { value: 5, label: "矮" },
-        { value: 10, label: "一般" },
-        { value: 30, label: "高" },
-        { value: "custom", label: "自定义" }
-      ],
-      barGapOption: [
-        { value: "30%", label: "默认" },
-        { value: "50%", label: "远" },
-        { value: "40%", label: "一般" },
-        { value: "20%", label: "近" },
-        { value: "0%", label: "重叠" },
-        { value: "-10%", label: "交错" },
-        { value: "custom", label: "自定义" }
-      ],
-      valueRatioOption: [
-        { value: "100", label: "乘以100" },
-        { value: "10", label: "乘以10" },
-        { value: "1", label: "默认" },
-        { value: "0.1", label: "除以10" },
-        { value: "0.01", label: "除以100" },
-        { value: "0.001", label: "除以1000" },
-        { value: "0.0001", label: "除以一万" },
-        { value: "0.00001", label: "除以10万" },
-        { value: "0.000001", label: "除以一百万" },
-        { value: "0.0000001", label: "除以一千万" },
-        { value: "0.00000001", label: "除以一亿" },
-        { value: "0.000000001", label: "除以十亿" }
-      ],
-      valueDigitOption: [
-        { value: "default", label: "自动显示" },
-        { value: 0, label: "整数" },
-        { value: 1, label: "1位小数" },
-        { value: 2, label: "2位小数" },
-        { value: 3, label: "3位小数" },
-        { value: 4, label: "4位小数" },
-        { value: 5, label: "5位小数" },
-        { value: 6, label: "6位小数" },
-        { value: 7, label: "7位小数" },
-        { value: 8, label: "8位小数" }
-      ],
-      textPosOption: [
-        { value: "top", label: "顶端" },
-        { value: "left", label: "左侧" },
-        { value: "right", label: "右侧" },
-        { value: "bottom", label: "底部" },
-        { value: "inside", label: "内部居中" },
-        { value: "insideLeft", label: "内部左侧" },
-        { value: "insideRight", label: "内部右侧" },
-        { value: "insideTop", label: "内部顶端" },
-        { value: "insideBottom", label: "内部底部" },
-        { value: "insideTopLeft", label: "内部左上" },
-        { value: "insideBottomLeft", label: "内部左下" },
-        { value: "insideTopRight", label: "内部右上" },
-        { value: "insideBottomRight", label: "内部右下" },
-        { value: "custom", label: "自定义" }
-      ],
-      fontSizeOption: [
-        { value: 6, label: "6px" },
-        { value: 8, label: "8px" },
-        { value: 10, label: "10px" },
-        { value: 12, label: "12px" },
-        { value: 14, label: "14px" },
-        { value: 16, label: "16px" },
-        { value: 18, label: "18px" },
-        { value: 20, label: "20px" },
-        { value: 22, label: "22px" },
-        { value: 24, label: "24px" },
-        { value: 30, label: "30px" },
-        { value: 36, label: "36px" },
-        { value: "custom", label: "自定义" }
-      ],
-      alignOption: [
-        { value: "left", label: "左对齐" },
-        { value: "center", label: "居中对齐" },
-        { value: "right", label: "右对齐" }
-      ],
-      verticalAlignOption: [
-        { value: "top", label: "底部对齐" },
-        { value: "middle", label: "居中对齐" },
-        { value: "bottom", label: "顶部对齐" },
-        { value: "custom", label: "自定义" }
-      ],
-      barCategoryGapOption: [
-        { value: "20%", label: "默认" },
-        { value: "40%", label: "远" },
-        { value: "30%", label: "一般" },
-        { value: "10%", label: "近" },
-        { value: "custom", label: "自定义" }
-      ],
-      radiusOption: [
-        { value: 0, label: "默认无" },
-        { value: "custom", label: "自定义" }
-      ],
-      tpFormatOption: [
-        { value: "{abc}", label: "系列名+数据名+数据" },
-        { value: "{bc}", label: "数据名+数据" },
-        { value: "{ac}", label: "系列名+数据" }
-      ]
+      lineWidthOption: i18n.t('chartEchartSeries.lineWidthOption'),
+      lineTypeOption: i18n.t('chartEchartSeries.lineTypeOption'),
+      symbolSizeOption: i18n.t('chartEchartSeries.symbolSizeOption'),
+      symbolOption: i18n.t('chartEchartSeries.symbolOption'),
+      symbolOption1: i18n.t('chartEchartSeries.symbolOption1'),
+      barWidthOption: i18n.t('chartEchartSeries.barWidthOption'),
+      barMinHeightOption: i18n.t('chartEchartSeries.barHeightOption'),
+      barGapOption: i18n.t('chartEchartSeries.barGapOption'),
+      valueRatioOption: i18n.t('chartEchartSeries.valueRatioOption'),
+      valueDigitOption: i18n.t('chartEchartSeries.valueDigitOption'),
+      textPosOption: i18n.t('chartEchartSeries.textPosOption'),
+      fontSizeOption: i18n.t('chartEchartSeries.fontSizeOption'),
+      alignOption: i18n.t('chartEchartSeries.alignOption'),
+      verticalAlignOption: i18n.t('chartEchartSeries.verticalAlignOption'),
+      barCategoryGapOption: i18n.t('chartEchartSeries.barCategoryGapOption'),
+      radiusOption: i18n.t('chartEchartSeries.radiusOption'),
+      tpFormatOption: i18n.t('chartEchartSeries.tpFormatOption')
     };
   },
   components: {
@@ -1400,12 +1260,12 @@ export default {
     },
     typeOption() {
       if (this.chart_style == "costComposition") {
-        return [{ value: "bar", label: "柱状图" }];
+        return i18n.t('chartEchartSeries.typeOption.bar');
       } else {
         return [
-          { value: "line", label: "折线图" },
-          { value: "bar", label: "柱状图" },
-          { value: "pictorialBar", label: "象形柱图" }
+          i18n.t('chartEchartSeries.typeOption.bar'),
+          i18n.t('chartEchartSeries.typeOption.line'),
+          i18n.t('chartEchartSeries.typeOption.pictorialBar')
         ];
       }
     },
@@ -1437,21 +1297,9 @@ export default {
     },
     formatterOption() {
       if (this.chart_style == "stackRatio") {
-        return [
-          { value: "{b}", label: "仅数据" },
-          { value: "{c}", label: "仅百分比" },
-          { value: "{bc}", label: "系列名+百分比" },
-          { value: "{pc}", label: "数据+百分比" },
-          { value: "{prc}", label: "数据+人+百分比" },
-          { value: "{bcd}", label: "系列名+数据+百分比" }
-        ];
+        return i18n.t('chartEchartSeries.formatterOption.stackRatio');
       } else {
-        return [
-          { value: "{c}", label: "仅数据" },
-          { value: "{bc}", label: "系列名+数据" },
-          { value: "{percent}", label: "仅百分比" },
-          { value: "{special}", label: "显示左侧百分比" }
-        ];
+        return i18n.t('chartEchartSeries.formatterOption.default');
       }
     },
     type: {

@@ -1,0 +1,1149 @@
+{
+	"button": {
+		"cancel": "",
+		"confirm": ""
+	},
+	"chartAxis": {
+		"align": "",
+		"area1": "",
+		"area2": "",
+		"areaInterval": "",
+		"axisGroup": {
+			"barAndCompare": [
+				{
+					"label": "",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "",
+					"value": "yAxisRight"
+				}
+			],
+			"compare": [
+				{
+					"label": "",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "",
+					"value": "yAxisRight"
+				}
+			],
+			"default": [
+				{
+					"label": "",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "",
+					"value": "yAxisRight"
+				}
+			]
+		},
+		"content": "",
+		"content1": "",
+		"content10": "",
+		"content11": "",
+		"content12": "",
+		"content2": "",
+		"content3": "",
+		"content4": "",
+		"content5": "",
+		"content6": "",
+		"content7": "",
+		"content8": "",
+		"content9": "",
+		"digit": "",
+		"fzPosOption": [
+			{
+				"label": "",
+				"value": "end"
+			},
+			{
+				"label": "",
+				"value": "hidden"
+			},
+			{
+				"label": "",
+				"value": "middle"
+			},
+			{
+				"label": "",
+				"value": "start"
+			}
+		],
+		"gap": "",
+		"interval": "",
+		"label": "",
+		"lineColor": "",
+		"lineStyleOption": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"lineWidth": "",
+		"max": "",
+		"min": "",
+		"modalName": "",
+		"netColor": "",
+		"netInterval": "",
+		"netType": "",
+		"netWidth": "",
+		"orient": [
+			{
+				"label": "",
+				"value": "inside"
+			},
+			{
+				"label": "",
+				"value": "outside"
+			}
+		],
+		"placeholder": "",
+		"position": "",
+		"prefix": "",
+		"ratio": "",
+		"reverse": "",
+		"rotate": "",
+		"select": "",
+		"show": "",
+		"showArea": "",
+		"showLabel": "",
+		"showLine": "",
+		"showNet": "",
+		"showTick": "",
+		"suffix": "",
+		"text": "",
+		"tickColor": "",
+		"tickLength": "",
+		"tickUnit": {
+			"custom": "Prilagođen"
+		},
+		"tickWidth": "",
+		"title": ""
+	},
+	"chartCursor": {
+		"axisPointerArr": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"axisType": "",
+		"background": "",
+		"color": "",
+		"digit": "",
+		"label": "",
+		"lineType": "",
+		"lineTypeOption": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"lineWidth": "",
+		"modalName": "",
+		"placeholder": "",
+		"position": "",
+		"ratio": "",
+		"show": "",
+		"suffix": "",
+		"trigger": "",
+		"triggerMethodArr": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"triggerTypeArr": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"type": ""
+	},
+	"chartEchartSeries": {
+		"alignOption": [
+			{
+				"label": "Lijevo",
+				"value": "left"
+			},
+			{
+				"label": "centar",
+				"value": "center"
+			},
+			{
+				"label": "pravo",
+				"value": "right"
+			}
+		],
+		"barCategoryGapOption": [
+			{
+				"label": "defaut",
+				"value": "20%"
+			},
+			{
+				"label": "daleko",
+				"value": "40%"
+			},
+			{
+				"label": "normalan",
+				"value": "30%"
+			},
+			{
+				"label": "Zatvoriti",
+				"value": "10%"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		],
+		"barGapOption": [
+			{
+				"label": "Zadano",
+				"value": "30%"
+			},
+			{
+				"label": "udaljeni",
+				"value": "50%"
+			},
+			{
+				"label": "normalan",
+				"value": "40%"
+			},
+			{
+				"label": "Zatvoriti",
+				"value": "20%"
+			},
+			{
+				"label": "preklapanje",
+				"value": "0%"
+			},
+			{
+				"label": "raspoređen",
+				"value": "-10%"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		],
+		"barHeightOption": [
+			{
+				"label": "Zadano"
+			},
+			{
+				"label": "kratak"
+			},
+			{
+				"label": "normalan"
+			},
+			{
+				"label": "visok"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		],
+		"barWidthOption": [
+			{
+				"label": "prilagodljiva"
+			},
+			{
+				"label": "Suziti"
+			},
+			{
+				"label": "normalan"
+			},
+			{
+				"label": "Širok"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		],
+		"chooseAreaChart": "",
+		"fontSizeOption": [
+			{
+				"label": "6px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "10px"
+			},
+			{
+				"label": "12px"
+			},
+			{
+				"label": "14px"
+			},
+			{
+				"label": "16px"
+			},
+			{
+				"label": "18px"
+			},
+			{
+				"label": "20px"
+			},
+			{
+				"label": "22px"
+			},
+			{
+				"label": "24px"
+			},
+			{
+				"label": "30x"
+			},
+			{
+				"label": "36px"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		],
+		"formatterOption": {
+			"default": [
+				{
+					"label": "",
+					"value": "{c}"
+				},
+				{
+					"label": "",
+					"value": "{bc}"
+				},
+				{
+					"label": "",
+					"value": "{percent}"
+				},
+				{
+					"label": "",
+					"value": "{special}"
+				}
+			],
+			"stackRatio": [
+				{
+					"label": "",
+					"value": "{b}"
+				},
+				{
+					"label": "",
+					"value": "{c}"
+				},
+				{
+					"label": "",
+					"value": "{bc}"
+				},
+				{
+					"label": "",
+					"value": "{pc}"
+				},
+				{
+					"label": "",
+					"value": "{prc}"
+				},
+				{
+					"label": "",
+					"value": "{bcd}"
+				}
+			]
+		},
+		"generalSettings": "",
+		"lineTypeOption": [
+			{
+				"label": "solidan",
+				"value": "solid"
+			},
+			{
+				"label": "isprekidana",
+				"value": "dashed"
+			},
+			{
+				"label": "točkasta",
+				"value": "dotted"
+			}
+		],
+		"lineWidthOption": [
+			{
+				"label": "1px"
+			},
+			{
+				"label": "2px"
+			},
+			{
+				"label": "3px"
+			},
+			{
+				"label": "4px"
+			},
+			{
+				"label": "5px"
+			},
+			{
+				"label": "6px"
+			},
+			{
+				"label": "7px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		],
+		"modalName": "",
+		"radiusOption": [
+			{
+				"label": "zadano nema"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		],
+		"symbolOption": [
+			{
+				"label": "prazan krug",
+				"value": "emptyCircle"
+			},
+			{
+				"label": "Krug",
+				"value": "circle"
+			},
+			{
+				"label": "prazan pravokutnik",
+				"value": "emptyRect"
+			},
+			{
+				"label": "pravokutnik",
+				"value": "rect"
+			},
+			{
+				"label": "zaobljeni pravokutnik",
+				"value": "roundRect"
+			},
+			{
+				"label": "prazan trokut",
+				"value": "emptyTriangle"
+			},
+			{
+				"label": "trokut",
+				"value": "triangle"
+			},
+			{
+				"label": "prazan dijamant",
+				"value": "emptyDiamond"
+			},
+			{
+				"label": "Dijamant",
+				"value": "diamond"
+			},
+			{
+				"label": "pin",
+				"value": "pin"
+			},
+			{
+				"label": "strijela",
+				"value": "arrow"
+			},
+			{
+				"label": "Crta",
+				"value": "line"
+			}
+		],
+		"symbolOption1": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"symbolSizeOption": [
+			{
+				"label": "2px"
+			},
+			{
+				"label": "3px"
+			},
+			{
+				"label": "6px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "10px"
+			},
+			{
+				"label": "12px"
+			},
+			{
+				"label": "14px"
+			},
+			{
+				"label": "16px"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		],
+		"textPosOption": [
+			{
+				"label": "Vrh",
+				"value": "top"
+			},
+			{
+				"label": "Lijevo",
+				"value": "left"
+			},
+			{
+				"label": "pravo",
+				"value": "right"
+			},
+			{
+				"label": "Dno",
+				"value": "bottom"
+			},
+			{
+				"label": "iznutra",
+				"value": "inside"
+			},
+			{
+				"label": "unutra lijevo",
+				"value": "insideLeft"
+			},
+			{
+				"label": "unutra desno",
+				"value": "insideRight"
+			},
+			{
+				"label": "unutarnji vrh",
+				"value": "insideTop"
+			},
+			{
+				"label": "unutarnje dno",
+				"value": "insideBottom"
+			},
+			{
+				"label": "unutra gore lijevo",
+				"value": "insideTopLeft"
+			},
+			{
+				"label": "unutra dolje lijevo",
+				"value": "insideBottomLeft"
+			},
+			{
+				"label": "unutra gore desno",
+				"value": "insideTopRight"
+			},
+			{
+				"label": "unutra dolje desno",
+				"value": "insideBottomRight"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		],
+		"tpFormatOption": [
+			{
+				"label": "naziv serije + naziv podataka + podatak",
+				"value": "{abc}"
+			},
+			{
+				"label": "naziv podataka + podaci",
+				"value": "{bc}"
+			},
+			{
+				"label": "naziv serije + podaci",
+				"value": "{ac}"
+			}
+		],
+		"typeOption": {
+			"bar": {
+				"label": "",
+				"value": "bar"
+			},
+			"line": {
+				"label": "",
+				"value": "line"
+			},
+			"pictorialBar": {
+				"label": "",
+				"value": "pictorialBar"
+			}
+		},
+		"valueDigitOption": [
+			{
+				"label": "Zadano",
+				"value": "default"
+			},
+			{
+				"label": "Cijeli broj"
+			},
+			{
+				"label": "1. decimala"
+			},
+			{
+				"label": "2. decimala"
+			},
+			{
+				"label": "3. decimala"
+			},
+			{
+				"label": "4. decimala"
+			},
+			{
+				"label": "5. decimala"
+			},
+			{
+				"label": "6. decimala"
+			},
+			{
+				"label": "7. decimala"
+			},
+			{
+				"label": "8. decimala"
+			}
+		],
+		"valueRatioOption": [
+			{
+				"label": "x100",
+				"value": "100"
+			},
+			{
+				"label": "x10",
+				"value": "10"
+			},
+			{
+				"label": "Zadano",
+				"value": "1"
+			},
+			{
+				"label": "x0.1",
+				"value": "0.1"
+			},
+			{
+				"label": "x0,01",
+				"value": "0.01"
+			},
+			{
+				"label": "x0.001",
+				"value": "0.001"
+			},
+			{
+				"label": "x0.0001",
+				"value": "0.0001"
+			},
+			{
+				"label": "x0.00001",
+				"value": "0.00001"
+			},
+			{
+				"label": "x0.000001",
+				"value": "0.000001"
+			},
+			{
+				"label": "x0.0000001",
+				"value": "0.0000001"
+			},
+			{
+				"label": "x0.00000001",
+				"value": "0.00000001"
+			},
+			{
+				"label": "x0.000000001",
+				"value": "0.000000001"
+			}
+		],
+		"verticalAlignOption": [
+			{
+				"label": "Vrh",
+				"value": "top"
+			},
+			{
+				"label": "srednji",
+				"value": "middle"
+			},
+			{
+				"label": "Dno",
+				"value": "bottom"
+			},
+			{
+				"label": "Prilagođen",
+				"value": "custom"
+			}
+		]
+	},
+	"chartLegend": {
+		"color": "Boja",
+		"contentH": "Povucite za promjenu osi x",
+		"contentHorizontal": "Povucite za promjenu širine",
+		"contentSpacing": "Povucite za promjenu razmaka",
+		"contentVertival": "Povucite za promjenu y-osi",
+		"contentWidth": "Povucite za promjenu visine",
+		"direction": "smjer",
+		"height": "Visina predmeta",
+		"modalName": "Postavka legende",
+		"position": "Položaj",
+		"show": "Prikaži legendu",
+		"spacing": "Udaljenost između svake legende",
+		"width": "Širina artikla"
+	},
+	"chartSetting": {
+		"axis": {
+			"x": "",
+			"y": ""
+		},
+		"chartType": "Vrsta grafikona",
+		"collection": "",
+		"column1": "postaviti broj",
+		"column2": "Kolona kao naslov",
+		"data": "Podaci",
+		"echarts": {
+			"area": {
+				"default": "Osnovno područje",
+				"stack": "Naslagano područje"
+			},
+			"bar": {
+				"default": "Osnovni trakasti grafikon",
+				"stack": "Naslagani trakasti grafikon"
+			},
+			"column": {
+				"default": "Osnovni stupni grafikon",
+				"stack": "Složeni stupni grafikon"
+			},
+			"line": {
+				"default": "Osnovni linijski dijagram",
+				"label": "Linijski grafikon s oznakom",
+				"smooth": "Zaglađeni linijski grafikon"
+			},
+			"pie": {
+				"default": "Osnovni tortni grafikon",
+				"ring": "Dijagram tortnog krofna",
+				"split": "Podijeljeni tortni grafikon"
+			}
+		},
+		"row1": "postaviti broj",
+		"row2": "Red kao naslov",
+		"style": "Stil",
+		"transpose": "Transponiranje (zamijeni redak/stupac)"
+	},
+	"chartSubTitle": {
+		"content": "Povucite za promjenu razmaka",
+		"gap": "Razmak između glavnog naslova i podnaslova",
+		"label": "Stil",
+		"modalName": "Postavka podnaslova",
+		"placeholder": "Unesite naslov",
+		"text": "Sadržaj"
+	},
+	"chartTitle": {
+		"label": "Stil",
+		"modalName": "Postavka naslova",
+		"offsetL": "Povucite za promjenu pomaka lijevo",
+		"offsetT": "Povucite za promjenu pomaka vrha",
+		"placeholder": "Unesite naslov",
+		"position": "Položaj",
+		"show": "Prikaži naslov",
+		"text": "Sadržaj"
+	},
+	"digitOption": [
+		{
+			"label": "Zadano",
+			"value": "auto"
+		},
+		{
+			"label": "Cijeli broj"
+		},
+		{
+			"label": "1. decimala"
+		},
+		{
+			"label": "2. decimala"
+		},
+		{
+			"label": "3. decimala"
+		},
+		{
+			"label": "4. decimala"
+		},
+		{
+			"label": "5. decimala"
+		},
+		{
+			"label": "6. decimala"
+		},
+		{
+			"label": "7. decimala"
+		},
+		{
+			"label": "8. decimala"
+		}
+	],
+	"dirOptions": [
+		{
+			"label": "horizontalno",
+			"value": "horizontal"
+		},
+		{
+			"label": "vertikala",
+			"value": "vertical"
+		}
+	],
+	"distanceOption": [
+		{
+			"label": "Zadano",
+			"value": "auto"
+		},
+		{
+			"label": "udaljeni",
+			"value": "far"
+		},
+		{
+			"label": "normalan",
+			"value": "normal"
+		},
+		{
+			"label": "blizu",
+			"value": "close"
+		},
+		{
+			"label": "Prilagođen",
+			"value": "custom"
+		}
+	],
+	"fontSizeList": [
+		{
+			"label": "Zadano",
+			"value": "auto"
+		},
+		{
+			"label": "6px"
+		},
+		{
+			"label": "8px"
+		},
+		{
+			"label": "10px"
+		},
+		{
+			"label": "12px"
+		},
+		{
+			"label": "14px"
+		},
+		{
+			"label": "16px"
+		},
+		{
+			"label": "18px"
+		},
+		{
+			"label": "24px"
+		},
+		{
+			"label": "28px"
+		},
+		{
+			"label": "36px"
+		},
+		{
+			"label": "Prilagodba",
+			"value": "custom"
+		}
+	],
+	"fontSizeSlider": {
+		"content": "",
+		"tooltip": ""
+	},
+	"fontStyleIB": {
+		"bold": {
+			"des": "odvažan",
+			"text": "B"
+		},
+		"italic": {
+			"des": "kurzivan",
+			"text": "I"
+		}
+	},
+	"fontStyleIBV": {
+		"bold": {
+			"des": "odvažan",
+			"text": "B"
+		},
+		"italic": {
+			"des": "kurzivan",
+			"text": "I"
+		},
+		"vertical": {
+			"des": "vertikala",
+			"text": "vertical"
+		}
+	},
+	"gradientType": {
+		"linear": "Linearno",
+		"radial": "Radijalni"
+	},
+	"intervalOption": [
+		{
+			"label": "Zadano",
+			"value": "auto"
+		},
+		{
+			"label": "svaki krpelj"
+		},
+		{
+			"label": "Interval 1"
+		},
+		{
+			"label": "Interval 2"
+		},
+		{
+			"label": "Interval 3"
+		},
+		{
+			"label": "Prilagodba",
+			"value": "custom"
+		}
+	],
+	"lineWeightOption": [
+		{
+			"label": "normalan",
+			"value": "custom"
+		},
+		{
+			"label": "odvažan",
+			"value": "bold"
+		},
+		{
+			"label": "vrlo hrabro",
+			"value": "bolder"
+		}
+	],
+	"posOption": [
+		{
+			"label": "Zadano",
+			"value": "auto"
+		},
+		{
+			"label": "centar",
+			"value": "iznutra"
+		},
+		{
+			"label": "Vrh",
+			"value": "top"
+		},
+		{
+			"label": "Lijevo",
+			"value": "left"
+		},
+		{
+			"label": "pravo",
+			"value": "right"
+		},
+		{
+			"label": "Dno",
+			"value": "bottom"
+		}
+	],
+	"positionOption": [
+		{
+			"label": "Gornji lijevi",
+			"value": "left-top"
+		},
+		{
+			"label": "Srednja lijeva",
+			"value": "left-middle"
+		},
+		{
+			"label": "Dolje lijevo",
+			"value": "left-bottom"
+		},
+		{
+			"label": "Gore desno",
+			"value": "right-top"
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		}
+	],
+	"ratioOption": [
+		{
+			"label": "x100"
+		},
+		{
+			"label": "x10"
+		},
+		{
+			"label": "Zadano"
+		},
+		{
+			"label": "x0.1"
+		},
+		{
+			"label": "x0,01"
+		},
+		{
+			"label": "x0.001"
+		},
+		{
+			"label": "x0.0001"
+		},
+		{
+			"label": "x0.00001"
+		},
+		{
+			"label": "x0.000001"
+		},
+		{
+			"label": "x0.0000001"
+		},
+		{
+			"label": "x0.00000001"
+		},
+		{
+			"label": "x0.000000001"
+		}
+	],
+	"sizeOption": [
+		{
+			"label": "Zadano",
+			"value": "auto"
+		},
+		{
+			"label": "",
+			"value": "big"
+		},
+		{
+			"label": "",
+			"value": "medium"
+		},
+		{
+			"label": "",
+			"value": "small"
+		},
+		{
+			"label": "Prilagođen",
+			"value": "custom"
+		}
+	]
+}

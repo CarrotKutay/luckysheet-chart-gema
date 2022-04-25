@@ -1,0 +1,1149 @@
+{
+	"button": {
+		"cancel": "",
+		"confirm": ""
+	},
+	"chartAxis": {
+		"align": "",
+		"area1": "",
+		"area2": "",
+		"areaInterval": "",
+		"axisGroup": {
+			"barAndCompare": [
+				{
+					"label": "",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "",
+					"value": "yAxisRight"
+				}
+			],
+			"compare": [
+				{
+					"label": "",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "",
+					"value": "yAxisRight"
+				}
+			],
+			"default": [
+				{
+					"label": "",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "",
+					"value": "yAxisRight"
+				}
+			]
+		},
+		"content": "",
+		"content1": "",
+		"content10": "",
+		"content11": "",
+		"content12": "",
+		"content2": "",
+		"content3": "",
+		"content4": "",
+		"content5": "",
+		"content6": "",
+		"content7": "",
+		"content8": "",
+		"content9": "",
+		"digit": "",
+		"fzPosOption": [
+			{
+				"label": "",
+				"value": "end"
+			},
+			{
+				"label": "",
+				"value": "hidden"
+			},
+			{
+				"label": "",
+				"value": "middle"
+			},
+			{
+				"label": "",
+				"value": "start"
+			}
+		],
+		"gap": "",
+		"interval": "",
+		"label": "",
+		"lineColor": "",
+		"lineStyleOption": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"lineWidth": "",
+		"max": "",
+		"min": "",
+		"modalName": "",
+		"netColor": "",
+		"netInterval": "",
+		"netType": "",
+		"netWidth": "",
+		"orient": [
+			{
+				"label": "",
+				"value": "inside"
+			},
+			{
+				"label": "",
+				"value": "outside"
+			}
+		],
+		"placeholder": "",
+		"position": "",
+		"prefix": "",
+		"ratio": "",
+		"reverse": "",
+		"rotate": "",
+		"select": "",
+		"show": "",
+		"showArea": "",
+		"showLabel": "",
+		"showLine": "",
+		"showNet": "",
+		"showTick": "",
+		"suffix": "",
+		"text": "",
+		"tickColor": "",
+		"tickLength": "",
+		"tickUnit": {
+			"custom": "Personnalisation"
+		},
+		"tickWidth": "",
+		"title": ""
+	},
+	"chartCursor": {
+		"axisPointerArr": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"axisType": "",
+		"background": "",
+		"color": "",
+		"digit": "",
+		"label": "",
+		"lineType": "",
+		"lineTypeOption": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"lineWidth": "",
+		"modalName": "",
+		"placeholder": "",
+		"position": "",
+		"ratio": "",
+		"show": "",
+		"suffix": "",
+		"trigger": "",
+		"triggerMethodArr": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"triggerTypeArr": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"type": ""
+	},
+	"chartEchartSeries": {
+		"alignOption": [
+			{
+				"label": "La gauche",
+				"value": "left"
+			},
+			{
+				"label": "Centre",
+				"value": "center"
+			},
+			{
+				"label": "Droite",
+				"value": "right"
+			}
+		],
+		"barCategoryGapOption": [
+			{
+				"label": "Défaut",
+				"value": "20%"
+			},
+			{
+				"label": "Loin",
+				"value": "40%"
+			},
+			{
+				"label": "Ordinaire",
+				"value": "30%"
+			},
+			{
+				"label": "Fermer",
+				"value": "10%"
+			},
+			{
+				"label": "Douane",
+				"value": "custom"
+			}
+		],
+		"barGapOption": [
+			{
+				"label": "Défaut",
+				"value": "30%"
+			},
+			{
+				"label": "Loin",
+				"value": "50%"
+			},
+			{
+				"label": "Ordinaire",
+				"value": "40%"
+			},
+			{
+				"label": "Fermer",
+				"value": "20%"
+			},
+			{
+				"label": "Chevauchement",
+				"value": "0%"
+			},
+			{
+				"label": "Échelonné",
+				"value": "-10%"
+			},
+			{
+				"label": "Personnalisation",
+				"value": "custom"
+			}
+		],
+		"barHeightOption": [
+			{
+				"label": "Par défaut"
+			},
+			{
+				"label": "Court"
+			},
+			{
+				"label": "Normal"
+			},
+			{
+				"label": "Haut"
+			},
+			{
+				"label": "Personnalisation",
+				"value": "custom"
+			}
+		],
+		"barWidthOption": [
+			{
+				"label": "Adaptatif"
+			},
+			{
+				"label": "Étroit"
+			},
+			{
+				"label": "Normal"
+			},
+			{
+				"label": "Large"
+			},
+			{
+				"label": "Personnalisation",
+				"value": "custom"
+			}
+		],
+		"chooseAreaChart": "",
+		"fontSizeOption": [
+			{
+				"label": "6px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "10px"
+			},
+			{
+				"label": "12px"
+			},
+			{
+				"label": "14px"
+			},
+			{
+				"label": "16px"
+			},
+			{
+				"label": "18px"
+			},
+			{
+				"label": "20px"
+			},
+			{
+				"label": "22px"
+			},
+			{
+				"label": "24px"
+			},
+			{
+				"label": "30x"
+			},
+			{
+				"label": "36px"
+			},
+			{
+				"label": "Personnalisation",
+				"value": "custom"
+			}
+		],
+		"formatterOption": {
+			"default": [
+				{
+					"label": "",
+					"value": "{c}"
+				},
+				{
+					"label": "",
+					"value": "{bc}"
+				},
+				{
+					"label": "",
+					"value": "{percent}"
+				},
+				{
+					"label": "",
+					"value": "{special}"
+				}
+			],
+			"stackRatio": [
+				{
+					"label": "",
+					"value": "{b}"
+				},
+				{
+					"label": "",
+					"value": "{c}"
+				},
+				{
+					"label": "",
+					"value": "{bc}"
+				},
+				{
+					"label": "",
+					"value": "{pc}"
+				},
+				{
+					"label": "",
+					"value": "{prc}"
+				},
+				{
+					"label": "",
+					"value": "{bcd}"
+				}
+			]
+		},
+		"generalSettings": "",
+		"lineTypeOption": [
+			{
+				"label": "Solide",
+				"value": "solid"
+			},
+			{
+				"label": "En pointillés",
+				"value": "dashed"
+			},
+			{
+				"label": "À pois",
+				"value": "dotted"
+			}
+		],
+		"lineWidthOption": [
+			{
+				"label": "1px"
+			},
+			{
+				"label": "2px"
+			},
+			{
+				"label": "3px"
+			},
+			{
+				"label": "4px"
+			},
+			{
+				"label": "5px"
+			},
+			{
+				"label": "6px"
+			},
+			{
+				"label": "7px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "Douane",
+				"value": "custom"
+			}
+		],
+		"modalName": "",
+		"radiusOption": [
+			{
+				"label": "Aucune par défaut"
+			},
+			{
+				"label": "Douane",
+				"value": "custom"
+			}
+		],
+		"symbolOption": [
+			{
+				"label": "cercle vide",
+				"value": "emptyCircle"
+			},
+			{
+				"label": "Cercle",
+				"value": "circle"
+			},
+			{
+				"label": "rectangle vide",
+				"value": "emptyRect"
+			},
+			{
+				"label": "Rectangle",
+				"value": "rect"
+			},
+			{
+				"label": "Rectangle arrondi",
+				"value": "roundRect"
+			},
+			{
+				"label": "triangle vide",
+				"value": "emptyTriangle"
+			},
+			{
+				"label": "Triangle",
+				"value": "triangle"
+			},
+			{
+				"label": "diamant vide",
+				"value": "emptyDiamond"
+			},
+			{
+				"label": "diamant",
+				"value": "diamond"
+			},
+			{
+				"label": "Épinglé",
+				"value": "pin"
+			},
+			{
+				"label": "La Flèche",
+				"value": "arrow"
+			},
+			{
+				"label": "Ligne",
+				"value": "line"
+			}
+		],
+		"symbolOption1": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"symbolSizeOption": [
+			{
+				"label": "2px"
+			},
+			{
+				"label": "3px"
+			},
+			{
+				"label": "6px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "10px"
+			},
+			{
+				"label": "12px"
+			},
+			{
+				"label": "14px"
+			},
+			{
+				"label": "16px"
+			},
+			{
+				"label": "Douane",
+				"value": "custom"
+			}
+		],
+		"textPosOption": [
+			{
+				"label": "Haut",
+				"value": "top"
+			},
+			{
+				"label": "La gauche",
+				"value": "left"
+			},
+			{
+				"label": "Droite",
+				"value": "right"
+			},
+			{
+				"label": "Bas",
+				"value": "bottom"
+			},
+			{
+				"label": "à l'intérieur",
+				"value": "inside"
+			},
+			{
+				"label": "intérieur gauche",
+				"value": "insideLeft"
+			},
+			{
+				"label": "intérieur droit",
+				"value": "insideRight"
+			},
+			{
+				"label": "intérieur haut",
+				"value": "insideTop"
+			},
+			{
+				"label": "à l'intérieur du bas",
+				"value": "insideBottom"
+			},
+			{
+				"label": "intérieur en haut à gauche",
+				"value": "insideTopLeft"
+			},
+			{
+				"label": "intérieur en bas à gauche",
+				"value": "insideBottomLeft"
+			},
+			{
+				"label": "intérieur en haut à droite",
+				"value": "insideTopRight"
+			},
+			{
+				"label": "intérieur en bas à droite",
+				"value": "insideBottomRight"
+			},
+			{
+				"label": "Personnalisation",
+				"value": "custom"
+			}
+		],
+		"tpFormatOption": [
+			{
+				"label": "nom de la série + nom des données + données",
+				"value": "{abc}"
+			},
+			{
+				"label": "nom des données + données",
+				"value": "{bc}"
+			},
+			{
+				"label": "nom de la série + données",
+				"value": "{ac}"
+			}
+		],
+		"typeOption": {
+			"bar": {
+				"label": "",
+				"value": "bar"
+			},
+			"line": {
+				"label": "",
+				"value": "line"
+			},
+			"pictorialBar": {
+				"label": "",
+				"value": "pictorialBar"
+			}
+		},
+		"valueDigitOption": [
+			{
+				"label": "Défaut",
+				"value": "default"
+			},
+			{
+				"label": "Entier"
+			},
+			{
+				"label": "1ère décimale"
+			},
+			{
+				"label": "2ème décimale"
+			},
+			{
+				"label": "3ème décimale"
+			},
+			{
+				"label": "4ème décimale"
+			},
+			{
+				"label": "5ème décimale"
+			},
+			{
+				"label": "6ème décimale"
+			},
+			{
+				"label": "7ème décimale"
+			},
+			{
+				"label": "8ème décimale"
+			}
+		],
+		"valueRatioOption": [
+			{
+				"label": "x100",
+				"value": "100"
+			},
+			{
+				"label": "x10",
+				"value": "10"
+			},
+			{
+				"label": "Défaut",
+				"value": "1"
+			},
+			{
+				"label": "x0.1",
+				"value": "0.1"
+			},
+			{
+				"label": "x0.01",
+				"value": "0.01"
+			},
+			{
+				"label": "x0.001",
+				"value": "0.001"
+			},
+			{
+				"label": "x0.0001",
+				"value": "0.0001"
+			},
+			{
+				"label": "x0.00001",
+				"value": "0.00001"
+			},
+			{
+				"label": "x0.000001",
+				"value": "0.000001"
+			},
+			{
+				"label": "x0.0000001",
+				"value": "0.0000001"
+			},
+			{
+				"label": "x0.00000001",
+				"value": "0.00000001"
+			},
+			{
+				"label": "x0.000000001",
+				"value": "0.000000001"
+			}
+		],
+		"verticalAlignOption": [
+			{
+				"label": "Haut",
+				"value": "top"
+			},
+			{
+				"label": "Milieu",
+				"value": "middle"
+			},
+			{
+				"label": "Bas",
+				"value": "bottom"
+			},
+			{
+				"label": "Personnalisation",
+				"value": "custom"
+			}
+		]
+	},
+	"chartLegend": {
+		"color": "Couleur",
+		"contentH": "Faites glisser pour changer l'axe des x",
+		"contentHorizontal": "Faites glisser pour changer la largeur",
+		"contentSpacing": "Faites glisser pour modifier l'écart",
+		"contentVertival": "Faites glisser pour changer l'axe y",
+		"contentWidth": "Faites glisser pour changer de hauteur",
+		"direction": "Direction",
+		"height": "Hauteur de l'article",
+		"modalName": "Réglage de la légende",
+		"position": "Position",
+		"show": "Afficher la légende",
+		"spacing": "Distance",
+		"width": "Largeur de l'article"
+	},
+	"chartSetting": {
+		"axis": {
+			"x": "",
+			"y": ""
+		},
+		"chartType": "Type de graphique",
+		"collection": "Collection",
+		"column1": "Numéro de série",
+		"column2": "Colonne comme titre",
+		"data": "Les données",
+		"echarts": {
+			"area": {
+				"default": "Zone de base",
+				"stack": "Zone empilée"
+			},
+			"bar": {
+				"default": "Graphique à barres de base",
+				"stack": "Graphique à barres empilées"
+			},
+			"column": {
+				"default": "Diagramme à colonnes de base",
+				"stack": "Graphique à colonnes empilées"
+			},
+			"line": {
+				"default": "Schéma de ligne de base",
+				"label": "Graphique en courbes avec étiquette",
+				"smooth": "Graphique en courbes lissées"
+			},
+			"pie": {
+				"default": "Graphique circulaire de base",
+				"ring": "Graphique circulaire en anneau",
+				"split": "Diagramme à secteurs fractionné"
+			}
+		},
+		"row1": "Numéro de série",
+		"row2": "Ligne comme titre",
+		"style": "Style",
+		"transpose": "Transposer (changer de ligne/colonne)"
+	},
+	"chartSubTitle": {
+		"content": "Faites glisser pour modifier l'écart",
+		"gap": "L'écart entre le titre principal et le sous-titre",
+		"label": "Style",
+		"modalName": "Réglage des sous-titres",
+		"placeholder": "Entrez le titre",
+		"text": "Contenu"
+	},
+	"chartTitle": {
+		"label": "Style",
+		"modalName": "Réglage du titre",
+		"offsetL": "Faites glisser pour changer le décalage à gauche",
+		"offsetT": "Faites glisser pour changer le haut décalé",
+		"placeholder": "Entrez le titre",
+		"position": "Position",
+		"show": "Montrer le titre",
+		"text": "Contenu"
+	},
+	"digitOption": [
+		{
+			"label": "Défaut",
+			"value": "auto"
+		},
+		{
+			"label": "Entier"
+		},
+		{
+			"label": "1ère décimale"
+		},
+		{
+			"label": "2ème décimale"
+		},
+		{
+			"label": "3ème décimale"
+		},
+		{
+			"label": "4ème décimale"
+		},
+		{
+			"label": "5ème décimale"
+		},
+		{
+			"label": "6ème décimale"
+		},
+		{
+			"label": "7ème décimale"
+		},
+		{
+			"label": "8ème décimale"
+		}
+	],
+	"dirOptions": [
+		{
+			"label": "Horizontal",
+			"value": "horizontal"
+		},
+		{
+			"label": "Verticale",
+			"value": "vertical"
+		}
+	],
+	"distanceOption": [
+		{
+			"label": "Défaut",
+			"value": "auto"
+		},
+		{
+			"label": "Loin",
+			"value": "far"
+		},
+		{
+			"label": "Ordinaire",
+			"value": "normal"
+		},
+		{
+			"label": "proche",
+			"value": "close"
+		},
+		{
+			"label": "Personnalisation",
+			"value": "custom"
+		}
+	],
+	"fontSizeList": [
+		{
+			"label": "Défaut",
+			"value": "auto"
+		},
+		{
+			"label": "6px"
+		},
+		{
+			"label": "8px"
+		},
+		{
+			"label": "10px"
+		},
+		{
+			"label": "12px"
+		},
+		{
+			"label": "14px"
+		},
+		{
+			"label": "16px"
+		},
+		{
+			"label": "18px"
+		},
+		{
+			"label": "24px"
+		},
+		{
+			"label": "28px"
+		},
+		{
+			"label": "36px"
+		},
+		{
+			"label": "Personnaliser",
+			"value": "custom"
+		}
+	],
+	"fontSizeSlider": {
+		"content": "",
+		"tooltip": ""
+	},
+	"fontStyleIB": {
+		"bold": {
+			"des": "Audacieux",
+			"text": "B"
+		},
+		"italic": {
+			"des": "italique",
+			"text": "I"
+		}
+	},
+	"fontStyleIBV": {
+		"bold": {
+			"des": "Audacieux",
+			"text": "B"
+		},
+		"italic": {
+			"des": "italique",
+			"text": "I"
+		},
+		"vertical": {
+			"des": "Verticale",
+			"text": "vertical"
+		}
+	},
+	"gradientType": {
+		"linear": "Linéaire",
+		"radial": "Radial"
+	},
+	"intervalOption": [
+		{
+			"label": "Défaut",
+			"value": "auto"
+		},
+		{
+			"label": "chaque tick"
+		},
+		{
+			"label": "Intervalle 1"
+		},
+		{
+			"label": "Intervalle 2"
+		},
+		{
+			"label": "Intervalle 3"
+		},
+		{
+			"label": "Personnaliser",
+			"value": "custom"
+		}
+	],
+	"lineWeightOption": [
+		{
+			"label": "Ordinaire",
+			"value": "custom"
+		},
+		{
+			"label": "Audacieux",
+			"value": "bold"
+		},
+		{
+			"label": "très audacieux",
+			"value": "bolder"
+		}
+	],
+	"posOption": [
+		{
+			"label": "Défaut",
+			"value": "auto"
+		},
+		{
+			"label": "Centre",
+			"value": "à l'intérieur"
+		},
+		{
+			"label": "Haut",
+			"value": "top"
+		},
+		{
+			"label": "La gauche",
+			"value": "left"
+		},
+		{
+			"label": "Droite",
+			"value": "right"
+		},
+		{
+			"label": "Bas",
+			"value": "bottom"
+		}
+	],
+	"positionOption": [
+		{
+			"label": "En haut à gauche",
+			"value": "left-top"
+		},
+		{
+			"label": "Milieu gauche",
+			"value": "left-middle"
+		},
+		{
+			"label": "En bas à gauche",
+			"value": "left-bottom"
+		},
+		{
+			"label": "En haut à droite",
+			"value": "right-top"
+		},
+		{
+			"label": "Milieu droit",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		}
+	],
+	"ratioOption": [
+		{
+			"label": "x100"
+		},
+		{
+			"label": "x10"
+		},
+		{
+			"label": "Défaut"
+		},
+		{
+			"label": "x0.1"
+		},
+		{
+			"label": "x0.01"
+		},
+		{
+			"label": "x0.001"
+		},
+		{
+			"label": "x0.0001"
+		},
+		{
+			"label": "x0.00001"
+		},
+		{
+			"label": "x0.000001"
+		},
+		{
+			"label": "x0.0000001"
+		},
+		{
+			"label": "x0.00000001"
+		},
+		{
+			"label": "x0.000000001"
+		}
+	],
+	"sizeOption": [
+		{
+			"label": "Défaut",
+			"value": "auto"
+		},
+		{
+			"label": "",
+			"value": "big"
+		},
+		{
+			"label": "",
+			"value": "medium"
+		},
+		{
+			"label": "",
+			"value": "small"
+		},
+		{
+			"label": "Personnalisation",
+			"value": "custom"
+		}
+	]
+}

@@ -1,0 +1,1149 @@
+{
+	"button": {
+		"cancel": "",
+		"confirm": ""
+	},
+	"chartAxis": {
+		"align": "文本对齐方式",
+		"area1": "网格区域第一颜色",
+		"area2": "网格区域第二颜色",
+		"areaInterval": "网格区域分割间隔数",
+		"axisGroup": {
+			"barAndCompare": [
+				{
+					"label": "Y轴(左侧垂直)",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "Y轴(左侧垂直)",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "X轴(下方水平)",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "X轴(上方水平)",
+					"value": "yAxisRight"
+				}
+			],
+			"compare": [
+				{
+					"label": "Y轴(右侧坐标轴)",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "Y轴(左侧坐标轴)",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "X轴(右侧坐标轴)",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "X轴(左侧坐标轴)",
+					"value": "yAxisRight"
+				}
+			],
+			"default": [
+				{
+					"label": "X轴(下方水平)",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "X轴(上方水平)",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "Y轴(左侧垂直)",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "Y轴(右侧垂直",
+					"value": "yAxisRight"
+				}
+			]
+		},
+		"content": "滑动修改坐标轴间隔个数",
+		"content1": "滑动修改标题与轴线距离",
+		"content10": "请输入标签后缀",
+		"content11": "滑动修改网格线宽度",
+		"content12": "滑动修改间隔数",
+		"content2": "滑动修改倾斜角度",
+		"content3": "滑动修改刻度线宽度",
+		"content4": "滑动修改刻度长度",
+		"content5": "滑动修改刻度宽度",
+		"content6": "滑动修改标签倾斜角度",
+		"content7": "请输入刻度最小值",
+		"content8": "请输入刻度最大值且最大值不能小于最小值",
+		"content9": "请输入标签前缀",
+		"digit": "小数位数",
+		"fzPosOption": [
+			{
+				"label": "尾部",
+				"value": "end"
+			},
+			{
+				"label": "隐藏",
+				"value": "hidden"
+			},
+			{
+				"label": "居中",
+				"value": "middle"
+			},
+			{
+				"label": "头部",
+				"value": "start"
+			}
+		],
+		"gap": "标题与轴线距离",
+		"interval": "坐标轴间隔个数",
+		"label": "文本样式",
+		"lineColor": "刻度线颜色",
+		"lineStyleOption": [
+			{
+				"label": "实线",
+				"value": "solid"
+			},
+			{
+				"label": "虚线",
+				"value": "dashed"
+			},
+			{
+				"label": "点线",
+				"value": "dotted"
+			}
+		],
+		"lineWidth": "刻度线宽度",
+		"max": "刻度最大值",
+		"min": "刻度最小值",
+		"modalName": "XY轴设置",
+		"netColor": "网格线颜色",
+		"netInterval": "网格线分割间隔数",
+		"netType": "网格线类型",
+		"netWidth": "网格线宽度",
+		"orient": [
+			{
+				"label": "朝内",
+				"value": "inside"
+			},
+			{
+				"label": "朝外",
+				"value": "outside"
+			}
+		],
+		"placeholder": "请输入标题内容",
+		"position": "刻度位置",
+		"prefix": "标签前缀",
+		"ratio": "数值缩放比例",
+		"reverse": "反向坐标轴",
+		"rotate": "倾斜标签",
+		"select": "选择坐标轴",
+		"show": "",
+		"showArea": "显示网格区域",
+		"showLabel": "显示刻度标签",
+		"showLine": "显示刻度线",
+		"showNet": "显示网格线",
+		"showTick": "显示刻度",
+		"suffix": "标签后缀",
+		"text": "标题内容",
+		"tickColor": "刻度颜色",
+		"tickLength": "刻度长度",
+		"tickUnit": {
+			"custom": "定制"
+		},
+		"tickWidth": "刻度宽度",
+		"title": "倾斜轴标题"
+	},
+	"chartCursor": {
+		"axisPointerArr": [
+			{
+				"label": "直线指示器",
+				"value": "line"
+			},
+			{
+				"label": "阴影指示器",
+				"value": "shadow"
+			},
+			{
+				"label": "十字准星指示器",
+				"value": "cross"
+			}
+		],
+		"axisType": "指示器类型",
+		"background": "背景颜色",
+		"color": "线条颜色",
+		"digit": "小数位数",
+		"label": "鼠标提示样式",
+		"lineType": "指示器线类型",
+		"lineTypeOption": [
+			{
+				"label": "实线",
+				"value": "solid"
+			},
+			{
+				"label": "虚线",
+				"value": "dashed"
+			},
+			{
+				"label": "点线",
+				"value": "dotted"
+			}
+		],
+		"lineWidth": "指示器线宽",
+		"modalName": "鼠标提示",
+		"placeholder": "后缀",
+		"position": "提示框浮层位置",
+		"ratio": "数值比例",
+		"show": "显示提示框",
+		"suffix": "鼠标提示后缀",
+		"trigger": "提示触发条件",
+		"triggerMethodArr": [
+			{
+				"label": "鼠标移动",
+				"value": "mousemove"
+			},
+			{
+				"label": "单击左键/鼠标划过",
+				"value": "click"
+			},
+			{
+				"label": "同时触发",
+				"value": "mousemove|click"
+			}
+		],
+		"triggerTypeArr": [
+			{
+				"label": "数据项图形触发",
+				"value": "item"
+			},
+			{
+				"label": "坐标轴触发",
+				"value": "axis"
+			}
+		],
+		"type": "提示触发类型"
+	},
+	"chartEchartSeries": {
+		"alignOption": [
+			{
+				"label": "左对齐",
+				"value": "left"
+			},
+			{
+				"label": "居中对齐",
+				"value": "center"
+			},
+			{
+				"label": "右对齐",
+				"value": "right"
+			}
+		],
+		"barCategoryGapOption": [
+			{
+				"label": "默认",
+				"value": "20%"
+			},
+			{
+				"label": "远",
+				"value": "40%"
+			},
+			{
+				"label": "一般",
+				"value": "30%"
+			},
+			{
+				"label": "近",
+				"value": "10%"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		],
+		"barGapOption": [
+			{
+				"label": "默认",
+				"value": "30%"
+			},
+			{
+				"label": "远",
+				"value": "50%"
+			},
+			{
+				"label": "一般",
+				"value": "40%"
+			},
+			{
+				"label": "近",
+				"value": "20%"
+			},
+			{
+				"label": "重叠",
+				"value": "0%"
+			},
+			{
+				"label": "交错",
+				"value": "-10%"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		],
+		"barHeightOption": [
+			{
+				"label": "默认"
+			},
+			{
+				"label": "矮"
+			},
+			{
+				"label": "一般"
+			},
+			{
+				"label": "高"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		],
+		"barWidthOption": [
+			{
+				"label": "自适应"
+			},
+			{
+				"label": "窄"
+			},
+			{
+				"label": "一般"
+			},
+			{
+				"label": "宽"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		],
+		"chooseAreaChart": "设置为面积图",
+		"fontSizeOption": [
+			{
+				"label": "6px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "10px"
+			},
+			{
+				"label": "12px"
+			},
+			{
+				"label": "14px"
+			},
+			{
+				"label": "16px"
+			},
+			{
+				"label": "18px"
+			},
+			{
+				"label": "20px"
+			},
+			{
+				"label": "22px"
+			},
+			{
+				"label": "24px"
+			},
+			{
+				"label": "30px"
+			},
+			{
+				"label": "36px"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		],
+		"formatterOption": {
+			"default": [
+				{
+					"label": "仅数据",
+					"value": "{c}"
+				},
+				{
+					"label": "系列名+数据",
+					"value": "{bc}"
+				},
+				{
+					"label": "仅百分比",
+					"value": "{percent}"
+				},
+				{
+					"label": "显示左侧百分比",
+					"value": "{special}"
+				}
+			],
+			"stackRatio": [
+				{
+					"label": "仅数据",
+					"value": "{b}"
+				},
+				{
+					"label": "仅百分比",
+					"value": "{c}"
+				},
+				{
+					"label": "系列名+百分比",
+					"value": "{bc}"
+				},
+				{
+					"label": "数据+百分比",
+					"value": "{pc}"
+				},
+				{
+					"label": "数据+人+百分比",
+					"value": "{prc}"
+				},
+				{
+					"label": "系列名+数据+百分比",
+					"value": "{bcd}"
+				}
+			]
+		},
+		"generalSettings": "通用设置",
+		"lineTypeOption": [
+			{
+				"label": "实线",
+				"value": "solid"
+			},
+			{
+				"label": "虚线",
+				"value": "dashed"
+			},
+			{
+				"label": "点线",
+				"value": "dotted"
+			}
+		],
+		"lineWidthOption": [
+			{
+				"label": "1px"
+			},
+			{
+				"label": "2px"
+			},
+			{
+				"label": "3px"
+			},
+			{
+				"label": "4px"
+			},
+			{
+				"label": "5px"
+			},
+			{
+				"label": "6px"
+			},
+			{
+				"label": "7px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		],
+		"modalName": "系列设置",
+		"radiusOption": [
+			{
+				"label": "默认无"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		],
+		"symbolOption": [
+			{
+				"label": "空心圆",
+				"value": "emptyCircle"
+			},
+			{
+				"label": "圆",
+				"value": "circle"
+			},
+			{
+				"label": "空心矩形",
+				"value": "emptyRect"
+			},
+			{
+				"label": "矩形",
+				"value": "rect"
+			},
+			{
+				"label": "圆角矩形",
+				"value": "roundRect"
+			},
+			{
+				"label": "空心三角",
+				"value": "emptyTriangle"
+			},
+			{
+				"label": "三角形",
+				"value": "triangle"
+			},
+			{
+				"label": "空心菱形",
+				"value": "emptyDiamond"
+			},
+			{
+				"label": "菱形",
+				"value": "diamond"
+			},
+			{
+				"label": "标注",
+				"value": "pin"
+			},
+			{
+				"label": "箭头",
+				"value": "arrow"
+			},
+			{
+				"label": "直线",
+				"value": "line"
+			}
+		],
+		"symbolOption1": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"symbolSizeOption": [
+			{
+				"label": "2px"
+			},
+			{
+				"label": "3px"
+			},
+			{
+				"label": "6px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "10px"
+			},
+			{
+				"label": "12px"
+			},
+			{
+				"label": "14px"
+			},
+			{
+				"label": "16px"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		],
+		"textPosOption": [
+			{
+				"label": "顶端",
+				"value": "top"
+			},
+			{
+				"label": "左侧",
+				"value": "left"
+			},
+			{
+				"label": "右侧",
+				"value": "right"
+			},
+			{
+				"label": "底部",
+				"value": "bottom"
+			},
+			{
+				"label": "内部居中",
+				"value": "inside"
+			},
+			{
+				"label": "内部左侧",
+				"value": "insideLeft"
+			},
+			{
+				"label": "内部右侧",
+				"value": "insideRight"
+			},
+			{
+				"label": "内部顶端",
+				"value": "insideTop"
+			},
+			{
+				"label": "内部底部",
+				"value": "insideBottom"
+			},
+			{
+				"label": "内部左上",
+				"value": "insideTopLeft"
+			},
+			{
+				"label": "内部左下",
+				"value": "insideBottomLeft"
+			},
+			{
+				"label": "内部右上",
+				"value": "insideTopRight"
+			},
+			{
+				"label": "内部右下",
+				"value": "insideBottomRight"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		],
+		"tpFormatOption": [
+			{
+				"label": "系列名+数据名+数据",
+				"value": "{abc}"
+			},
+			{
+				"label": "数据名+数据",
+				"value": "{bc}"
+			},
+			{
+				"label": "系列名+数据",
+				"value": "{ac}"
+			}
+		],
+		"typeOption": {
+			"bar": {
+				"label": "柱状图",
+				"value": "bar"
+			},
+			"line": {
+				"label": "折线图",
+				"value": "line"
+			},
+			"pictorialBar": {
+				"label": "象形柱图",
+				"value": "pictorialBar"
+			}
+		},
+		"valueDigitOption": [
+			{
+				"label": "自动显示",
+				"value": "default"
+			},
+			{
+				"label": "整数"
+			},
+			{
+				"label": "1位小数"
+			},
+			{
+				"label": "2位小数"
+			},
+			{
+				"label": "3位小数"
+			},
+			{
+				"label": "4位小数"
+			},
+			{
+				"label": "5位小数"
+			},
+			{
+				"label": "6位小数"
+			},
+			{
+				"label": "7位小数"
+			},
+			{
+				"label": "8位小数"
+			}
+		],
+		"valueRatioOption": [
+			{
+				"label": "乘以100",
+				"value": "100"
+			},
+			{
+				"label": "乘以10",
+				"value": "10"
+			},
+			{
+				"label": "默认",
+				"value": "1"
+			},
+			{
+				"label": "除以10",
+				"value": "0.1"
+			},
+			{
+				"label": "除以100",
+				"value": "0.01"
+			},
+			{
+				"label": "除以1000",
+				"value": "0.001"
+			},
+			{
+				"label": "除以一万",
+				"value": "0.0001"
+			},
+			{
+				"label": "除以10万",
+				"value": "0.00001"
+			},
+			{
+				"label": "除以一百万",
+				"value": "0.000001"
+			},
+			{
+				"label": "除以一千万",
+				"value": "0.0000001"
+			},
+			{
+				"label": "除以一亿",
+				"value": "0.00000001"
+			},
+			{
+				"label": "除以十亿",
+				"value": "0.000000001"
+			}
+		],
+		"verticalAlignOption": [
+			{
+				"label": "底部对齐",
+				"value": "top"
+			},
+			{
+				"label": "居中对齐",
+				"value": "middle"
+			},
+			{
+				"label": "顶部对齐",
+				"value": "bottom"
+			},
+			{
+				"label": "自定义",
+				"value": "custom"
+			}
+		]
+	},
+	"chartLegend": {
+		"color": "图例样式",
+		"contentH": "滑动修改水平偏移量",
+		"contentHorizontal": "滑动修改图例高度",
+		"contentSpacing": "滑动修改图例间距",
+		"contentVertival": "滑动修改垂直偏移量",
+		"contentWidth": "滑动修改图例宽度",
+		"direction": "图例朝向",
+		"height": "图例高度",
+		"modalName": "图例设置",
+		"position": "图例位置",
+		"show": "显示图例",
+		"spacing": "图例间距",
+		"width": "图例宽度"
+	},
+	"chartSetting": {
+		"axis": {
+			"x": "x轴",
+			"y": "y轴"
+		},
+		"chartType": "图表类型",
+		"collection": "系列",
+		"column1": "设选中项第",
+		"column2": "列为标题",
+		"data": "数据",
+		"echarts": {
+			"area": {
+				"default": "默认面积图",
+				"stack": "堆叠面积图"
+			},
+			"bar": {
+				"default": "默认条形图",
+				"stack": "堆叠条形图"
+			},
+			"column": {
+				"default": "默认柱状图",
+				"stack": "堆叠柱状图"
+			},
+			"line": {
+				"default": "默认折线图",
+				"label": "带标签的折线图",
+				"smooth": "平滑折线图"
+			},
+			"pie": {
+				"default": "默认饼图",
+				"ring": "环形饼图",
+				"split": "分离型饼图"
+			}
+		},
+		"row1": "设选中项第",
+		"row2": "行为标题",
+		"style": "样式",
+		"transpose": "转置(切换行/列)"
+	},
+	"chartSubTitle": {
+		"content": "滑动修改间距",
+		"gap": "主副标题间距",
+		"label": "文本样式",
+		"modalName": "副标题设置",
+		"placeholder": "请输入标题内容",
+		"text": "副标题内容"
+	},
+	"chartTitle": {
+		"label": "文本样式",
+		"modalName": "标题设置",
+		"offsetL": "滑动修改左边距偏移量",
+		"offsetT": "滑动修改上边距偏移量",
+		"placeholder": "请输入标题内容",
+		"position": "标题位置",
+		"show": "显示主标题",
+		"text": "默认标题"
+	},
+	"digitOption": [
+		{
+			"label": "默认",
+			"value": "auto"
+		},
+		{
+			"label": "整数"
+		},
+		{
+			"label": "第一个小数"
+		},
+		{
+			"label": "第 2 位小数"
+		},
+		{
+			"label": "第 3 位小数"
+		},
+		{
+			"label": "第 4 位小数"
+		},
+		{
+			"label": "第 5 位小数"
+		},
+		{
+			"label": "第 6 位小数"
+		},
+		{
+			"label": "第 7 位小数"
+		},
+		{
+			"label": "第 8 位小数"
+		}
+	],
+	"dirOptions": [
+		{
+			"label": "水平",
+			"value": "horizontal"
+		},
+		{
+			"label": "垂直",
+			"value": "vertical"
+		}
+	],
+	"distanceOption": [
+		{
+			"label": "默认",
+			"value": "auto"
+		},
+		{
+			"label": "遥远",
+			"value": "far"
+		},
+		{
+			"label": "一般",
+			"value": "normal"
+		},
+		{
+			"label": "相近",
+			"value": "close"
+		},
+		{
+			"label": "习惯",
+			"value": "custom"
+		}
+	],
+	"fontSizeList": [
+		{
+			"label": "默认",
+			"value": "auto"
+		},
+		{
+			"label": "6px"
+		},
+		{
+			"label": "8px"
+		},
+		{
+			"label": "10px"
+		},
+		{
+			"label": "12px"
+		},
+		{
+			"label": "14px"
+		},
+		{
+			"label": "16px"
+		},
+		{
+			"label": "18px"
+		},
+		{
+			"label": "24px"
+		},
+		{
+			"label": "28px"
+		},
+		{
+			"label": "36px"
+		},
+		{
+			"label": "定制",
+			"value": "custom"
+		}
+	],
+	"fontSizeSlider": {
+		"content": "滑动修改字体大小",
+		"tooltip": "选择字体大小"
+	},
+	"fontStyleIB": {
+		"bold": {
+			"des": "胆大",
+			"text": "B"
+		},
+		"italic": {
+			"des": "斜体",
+			"text": "I"
+		}
+	},
+	"fontStyleIBV": {
+		"bold": {
+			"des": "胆大",
+			"text": "B"
+		},
+		"italic": {
+			"des": "斜体",
+			"text": "I"
+		},
+		"vertical": {
+			"des": "垂直",
+			"text": "vertical"
+		}
+	},
+	"gradientType": {
+		"linear": "线性",
+		"radial": "径向"
+	},
+	"intervalOption": [
+		{
+			"label": "默认",
+			"value": "auto"
+		},
+		{
+			"label": "每个刻度"
+		},
+		{
+			"label": "间隔 1"
+		},
+		{
+			"label": "间隔 2"
+		},
+		{
+			"label": "间隔 3"
+		},
+		{
+			"label": "定制",
+			"value": "custom"
+		}
+	],
+	"lineWeightOption": [
+		{
+			"label": "正常",
+			"value": "custom"
+		},
+		{
+			"label": "胆大",
+			"value": "bold"
+		},
+		{
+			"label": "非常大胆",
+			"value": "bolder"
+		}
+	],
+	"posOption": [
+		{
+			"label": "默认",
+			"value": "auto"
+		},
+		{
+			"label": "居中对齐",
+			"value": "朝内"
+		},
+		{
+			"label": "朝外",
+			"value": "top"
+		},
+		{
+			"label": "左对齐",
+			"value": "left"
+		},
+		{
+			"label": "右对齐",
+			"value": "right"
+		},
+		{
+			"label": "底部",
+			"value": "bottom"
+		}
+	],
+	"positionOption": [
+		{
+			"label": "左上",
+			"value": "left-top"
+		},
+		{
+			"label": "中左",
+			"value": "left-middle"
+		},
+		{
+			"label": "左下",
+			"value": "left-bottom"
+		},
+		{
+			"label": "右上",
+			"value": "right-top"
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		}
+	],
+	"ratioOption": [
+		{
+			"label": "乘以100"
+		},
+		{
+			"label": "乘以10"
+		},
+		{
+			"label": "默认"
+		},
+		{
+			"label": "除以10"
+		},
+		{
+			"label": "除以100"
+		},
+		{
+			"label": "除以1000"
+		},
+		{
+			"label": "除以一万"
+		},
+		{
+			"label": "除以10万"
+		},
+		{
+			"label": "除以一百万"
+		},
+		{
+			"label": "除以一千万"
+		},
+		{
+			"label": "除以一亿"
+		},
+		{
+			"label": "除以十亿"
+		}
+	],
+	"sizeOption": [
+		{
+			"label": "默认",
+			"value": "auto"
+		},
+		{
+			"label": "",
+			"value": "big"
+		},
+		{
+			"label": "",
+			"value": "medium"
+		},
+		{
+			"label": "",
+			"value": "small"
+		},
+		{
+			"label": "习惯",
+			"value": "custom"
+		}
+	]
+}

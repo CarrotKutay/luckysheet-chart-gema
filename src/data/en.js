@@ -132,7 +132,19 @@ let obj = {
         placeholder: 'suffix',
         ratio: 'scale value',
         digit: 'decimal digits'
-    }
+    },
+    positionOption: [
+        { value: 'left-top', label: 'left top' },
+        { value: 'left-middle', label: 'left middle' },
+        { value: 'left-bottom', label: 'left bottom' },
+        { value: 'right-top', label: 'right top' },
+        { value: 'right-middle', label: 'right middle' },
+        { value: 'right-bottom', label: 'right bottom' },
+        { value: 'center-top', label: 'center top' },
+        { value: 'center-middle', label: 'center middle' },
+        { value: 'center-bottom', label: 'center bottom' },
+        { value: 'custom', label: 'custom' },
+    ]
 }
 
 export default obj

@@ -33,9 +33,7 @@
 
 <script>
 import * as t from "@/utils/importUtil";
-import { distanceOption } from "@/data/chartJson";
-import transCN from "@/data/cn";
-import transEN from "@/data/en";
+import i18n from '@/i18n'
 
 export default {
   name: "ChartSubTitle",
@@ -45,7 +43,7 @@ export default {
     subTitleOption: Object,
     lang: {
       type: String,
-      default: "cn",
+      default: "en",
     },
   },
   components: {
@@ -54,16 +52,12 @@ export default {
   data: function () {
     return {
       subTitle: {}, //整个title设置
-      distanceOption: t.deepCopy(distanceOption), //位置选择数组
+      distanceOption: i18n.t('distanceOption'), //位置选择数组
       setItem: {},
     };
   },
   mounted() {
-    if (this.lang == "ch") {
-      this.setItem = transCN["chartSubTitle"];
-      return;
-    }
-    this.setItem = transEN["chartSubTitle"];
+    this.setItem = i18n.t('chartSubTitle')
   },
   watch: {
     subTitleOption: {
@@ -87,11 +81,7 @@ export default {
       immediate: true,
     },
     lang(val) {
-      if (val == "ch") {
-        this.setItem = transCN["chartSubTitle"];
-        return;
-      }
-      this.setItem = transEN["chartSubTitle"];
+      this.setItem = i18n.t('chartSubTitle');
     },
   },
   methods: {

@@ -78,8 +78,6 @@ import { mapState } from "vuex";
 import { deepCopy } from "@/utils/util";
 import { changeChangeAllType } from "@/utils/chartUtil";
 import { chartreuse } from "color-name";
-import transCN from "@/data/cn";
-import transEN from "@/data/en";
 
 //图表选择组件
 export default {
@@ -99,7 +97,7 @@ export default {
     },
     lang: {
       type: String,
-      default: "cn",
+      default: "en",
     },
   },
   data: function () {

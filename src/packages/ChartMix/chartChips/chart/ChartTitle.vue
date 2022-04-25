@@ -47,9 +47,7 @@
 
 <script>
 import * as t from "@/utils/importUtil";
-import { positionOption } from "@/data/chartJson";
-import transCN from "@/data/cn";
-import transEN from "@/data/en";
+import i18n from '@/i18n'
 
 export default {
   name: "ChartTitle",
@@ -59,23 +57,19 @@ export default {
     titleOption: Object,
     lang: {
       type: String,
-      default: "cn",
+      default: "en",
     },
   },
   components: {
     ...t.importComp(t),
   },
   mounted() {
-    if (this.lang == "ch") {
-      this.setItem = transCN["chartTitle"];
-      return;
-    }
-    this.setItem = transEN["chartTitle"];
+    this.setItem = i18n.t('chartTitle');
   },
   data: function () {
     return {
       title: "", //整个title设置,
-      positionData: positionOption,
+      positionData: i18n.t('positionOption'),
       isChange: false,
       setItem:{}
     };
@@ -108,12 +102,8 @@ export default {
       deep: true,
       immediate: true,
     },
-    lang(val) {
-      if (val == "ch") {
-        this.setItem = transCN["chartTitle"];
-        return;
-      }
-      this.setItem = transEN["chartTitle"];
+    lang() {
+      this.setItem = i18n.t('chartTitle');
     },
   },
   methods: {

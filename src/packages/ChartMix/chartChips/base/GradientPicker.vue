@@ -289,8 +289,8 @@
                     @click="closePanel"
                     size="mini"
                     style="padding-left:6px;padding-right:6px;"
-                  >取消</el-button>
-                  <el-button @click="confirm" size="mini" type="primary">确认</el-button>
+                  >{{ cancelMessage }}</el-button>
+                  <el-button @click="confirm" size="mini" type="primary">{{ confirmMessage }}</el-button>
                 </el-col>
               </el-row>
             </el-col>
@@ -304,11 +304,15 @@
 <script>
 //颜色选择组件
 import $ from 'jquery'
+import i18n from '@/i18n'
+
 export default {
   name: 'GradientPicker',
   props: ['value', 'size', 'localStoragekey', 'label', 'tooltip'],
   data: function() {
     return {
+      confirmMessage: i18n.t('button.confirm'),
+      cancelMessage: i18n.t('button.cancel'),
       colorType: '1',
       reverse: false,
       gradientType: 'linear',

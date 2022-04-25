@@ -1,0 +1,1149 @@
+{
+	"button": {
+		"cancel": "Abbrechen",
+		"confirm": "Ok"
+	},
+	"chartAxis": {
+		"align": "",
+		"area1": "",
+		"area2": "",
+		"areaInterval": "",
+		"axisGroup": {
+			"barAndCompare": [
+				{
+					"label": "y-Achse (links vertikal)",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "y-Achse (rechts vertikal)",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "x-Achse (horizontal unten)",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "x-Achse (horizontal darüber)",
+					"value": "yAxisRight"
+				}
+			],
+			"compare": [
+				{
+					"label": "Y-Achse (rechter Koordinatenabschnitt)",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "y-Achse (linker Koordinatenabschnitt",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "x-Achse (rechter Koordinatenabschnitt)",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "x-Achse (linker Koordinatenabschnitt)",
+					"value": "yAxisRight"
+				}
+			],
+			"default": [
+				{
+					"label": "x-Achse (horizontal darunter)",
+					"value": "xAxisDown"
+				},
+				{
+					"label": "x-Achse (horizontal darüber)",
+					"value": "xAxisUp"
+				},
+				{
+					"label": "y-Achse (links vertikal)",
+					"value": "yAxisLeft"
+				},
+				{
+					"label": "y-Achse (rechts vertikal)",
+					"value": "yAxisRight"
+				}
+			]
+		},
+		"content": "",
+		"content1": "",
+		"content10": "",
+		"content11": "",
+		"content12": "",
+		"content2": "",
+		"content3": "",
+		"content4": "",
+		"content5": "",
+		"content6": "",
+		"content7": "",
+		"content8": "",
+		"content9": "",
+		"digit": "",
+		"fzPosOption": [
+			{
+				"label": "Ende",
+				"value": "end"
+			},
+			{
+				"label": "Versteckt",
+				"value": "hidden"
+			},
+			{
+				"label": "Mittig",
+				"value": "middle"
+			},
+			{
+				"label": "Anfang",
+				"value": "start"
+			}
+		],
+		"gap": "",
+		"interval": "",
+		"label": "",
+		"lineColor": "",
+		"lineStyleOption": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"lineWidth": "",
+		"max": "",
+		"min": "",
+		"modalName": "XY-Achsen",
+		"netColor": "",
+		"netInterval": "",
+		"netType": "",
+		"netWidth": "",
+		"orient": [
+			{
+				"label": "innen",
+				"value": "inside"
+			},
+			{
+				"label": "außen",
+				"value": "outside"
+			}
+		],
+		"placeholder": "",
+		"position": "",
+		"prefix": "",
+		"ratio": "",
+		"reverse": "",
+		"rotate": "",
+		"select": "",
+		"show": "Anzeigen",
+		"showArea": "",
+		"showLabel": "",
+		"showLine": "",
+		"showNet": "",
+		"showTick": "",
+		"suffix": "",
+		"text": "",
+		"tickColor": "",
+		"tickLength": "",
+		"tickUnit": {
+			"custom": "Benutzerdefiniert"
+		},
+		"tickWidth": "",
+		"title": ""
+	},
+	"chartCursor": {
+		"axisPointerArr": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"axisType": "",
+		"background": "",
+		"color": "",
+		"digit": "",
+		"label": "",
+		"lineType": "",
+		"lineTypeOption": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"lineWidth": "",
+		"modalName": "",
+		"placeholder": "",
+		"position": "",
+		"ratio": "",
+		"show": "",
+		"suffix": "",
+		"trigger": "",
+		"triggerMethodArr": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"triggerTypeArr": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"type": ""
+	},
+	"chartEchartSeries": {
+		"alignOption": [
+			{
+				"label": "Links",
+				"value": "left"
+			},
+			{
+				"label": "Center",
+				"value": "center"
+			},
+			{
+				"label": "Rechts",
+				"value": "right"
+			}
+		],
+		"barCategoryGapOption": [
+			{
+				"label": "Standard",
+				"value": "20%"
+			},
+			{
+				"label": "Weit",
+				"value": "40%"
+			},
+			{
+				"label": "Normal",
+				"value": "30%"
+			},
+			{
+				"label": "Nah",
+				"value": "10%"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		],
+		"barGapOption": [
+			{
+				"label": "Standard",
+				"value": "30%"
+			},
+			{
+				"label": "weit",
+				"value": "50%"
+			},
+			{
+				"label": "Normal",
+				"value": "40%"
+			},
+			{
+				"label": "Schließen",
+				"value": "20%"
+			},
+			{
+				"label": "Überschneidung",
+				"value": "0%"
+			},
+			{
+				"label": "Gestaffelt",
+				"value": "-10%"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		],
+		"barHeightOption": [
+			{
+				"label": "Standard"
+			},
+			{
+				"label": "Kurz"
+			},
+			{
+				"label": "Normal"
+			},
+			{
+				"label": "Hoch"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		],
+		"barWidthOption": [
+			{
+				"label": "Adaptiv"
+			},
+			{
+				"label": "Schmal"
+			},
+			{
+				"label": "Normal"
+			},
+			{
+				"label": "breit"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		],
+		"chooseAreaChart": "Flächendiagramm auswählen",
+		"fontSizeOption": [
+			{
+				"label": "6px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "10px"
+			},
+			{
+				"label": "12px"
+			},
+			{
+				"label": "14px"
+			},
+			{
+				"label": "16px"
+			},
+			{
+				"label": "18px"
+			},
+			{
+				"label": "20px"
+			},
+			{
+				"label": "22px"
+			},
+			{
+				"label": "24px"
+			},
+			{
+				"label": "30x"
+			},
+			{
+				"label": "36px"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		],
+		"formatterOption": {
+			"default": [
+				{
+					"label": "Nur Daten",
+					"value": "{c}"
+				},
+				{
+					"label": "Name und Daten",
+					"value": "{bc}"
+				},
+				{
+					"label": "nur Prozent",
+					"value": "{percent}"
+				},
+				{
+					"label": "zeige Prozent links an",
+					"value": "{special}"
+				}
+			],
+			"stackRatio": [
+				{
+					"label": "Nur Daten",
+					"value": "{b}"
+				},
+				{
+					"label": "Nur prozentual",
+					"value": "{c}"
+				},
+				{
+					"label": "Name und Prozentzahl",
+					"value": "{bc}"
+				},
+				{
+					"label": "Daten und Prozentzahl",
+					"value": "{pc}"
+				},
+				{
+					"label": "Daten, Personen und Prozentzahl",
+					"value": "{prc}"
+				},
+				{
+					"label": "Name, Daten und Prozentzahl",
+					"value": "{bcd}"
+				}
+			]
+		},
+		"generalSettings": "Generelle Einstellungen",
+		"lineTypeOption": [
+			{
+				"label": "Solide",
+				"value": "solid"
+			},
+			{
+				"label": "Gestrichelt",
+				"value": "dashed"
+			},
+			{
+				"label": "Gepunktet",
+				"value": "dotted"
+			}
+		],
+		"lineWidthOption": [
+			{
+				"label": "1px"
+			},
+			{
+				"label": "2px"
+			},
+			{
+				"label": "3px"
+			},
+			{
+				"label": "4px"
+			},
+			{
+				"label": "5px"
+			},
+			{
+				"label": "6px"
+			},
+			{
+				"label": "7px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		],
+		"modalName": "Diagrammeinstellungen",
+		"radiusOption": [
+			{
+				"label": "Standard keine"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		],
+		"symbolOption": [
+			{
+				"label": "leerer Kreis",
+				"value": "emptyCircle"
+			},
+			{
+				"label": "Kreis",
+				"value": "circle"
+			},
+			{
+				"label": "leeres Rechteck",
+				"value": "emptyRect"
+			},
+			{
+				"label": "Rechteck",
+				"value": "rect"
+			},
+			{
+				"label": "Rechteck mit abgerundeten Ecken",
+				"value": "roundRect"
+			},
+			{
+				"label": "leeres Dreieck",
+				"value": "emptyTriangle"
+			},
+			{
+				"label": "Dreieck",
+				"value": "triangle"
+			},
+			{
+				"label": "leerer Diamant",
+				"value": "emptyDiamond"
+			},
+			{
+				"label": "Diamant",
+				"value": "diamond"
+			},
+			{
+				"label": "Stift",
+				"value": "pin"
+			},
+			{
+				"label": "Pfeil",
+				"value": "arrow"
+			},
+			{
+				"label": "Linie",
+				"value": "line"
+			}
+		],
+		"symbolOption1": [
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			},
+			{
+				"label": "",
+				"value": ""
+			}
+		],
+		"symbolSizeOption": [
+			{
+				"label": "2px"
+			},
+			{
+				"label": "3px"
+			},
+			{
+				"label": "6px"
+			},
+			{
+				"label": "8px"
+			},
+			{
+				"label": "10px"
+			},
+			{
+				"label": "12px"
+			},
+			{
+				"label": "14px"
+			},
+			{
+				"label": "16px"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		],
+		"textPosOption": [
+			{
+				"label": "Oben",
+				"value": "top"
+			},
+			{
+				"label": "Links",
+				"value": "left"
+			},
+			{
+				"label": "Rechts",
+				"value": "right"
+			},
+			{
+				"label": "Unten",
+				"value": "bottom"
+			},
+			{
+				"label": "Innerhalb",
+				"value": "inside"
+			},
+			{
+				"label": "innen links",
+				"value": "insideLeft"
+			},
+			{
+				"label": "innen rechts",
+				"value": "insideRight"
+			},
+			{
+				"label": "innen oben",
+				"value": "insideTop"
+			},
+			{
+				"label": "innen unten",
+				"value": "insideBottom"
+			},
+			{
+				"label": "innen oben links",
+				"value": "insideTopLeft"
+			},
+			{
+				"label": "unten links innen",
+				"value": "insideBottomLeft"
+			},
+			{
+				"label": "innen rechts oben",
+				"value": "insideTopRight"
+			},
+			{
+				"label": "unten rechts innen",
+				"value": "insideBottomRight"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		],
+		"tpFormatOption": [
+			{
+				"label": "Serienname + Datenname + Daten",
+				"value": "{abc}"
+			},
+			{
+				"label": "Datenname + Daten",
+				"value": "{bc}"
+			},
+			{
+				"label": "Serienname + Daten",
+				"value": "{ac}"
+			}
+		],
+		"typeOption": {
+			"bar": {
+				"label": "",
+				"value": "bar"
+			},
+			"line": {
+				"label": "",
+				"value": "line"
+			},
+			"pictorialBar": {
+				"label": "",
+				"value": "pictorialBar"
+			}
+		},
+		"valueDigitOption": [
+			{
+				"label": "Standard",
+				"value": "default"
+			},
+			{
+				"label": "Ganze Zahl"
+			},
+			{
+				"label": "1. Dezimalstelle"
+			},
+			{
+				"label": "2. Dezimalstelle"
+			},
+			{
+				"label": "3. Dezimalstelle"
+			},
+			{
+				"label": "4. Dezimalstelle"
+			},
+			{
+				"label": "5. Dezimalstelle"
+			},
+			{
+				"label": "6. Dezimalstelle"
+			},
+			{
+				"label": "7. Dezimalstelle"
+			},
+			{
+				"label": "8. Dezimalstelle"
+			}
+		],
+		"valueRatioOption": [
+			{
+				"label": "x100",
+				"value": "100"
+			},
+			{
+				"label": "x10",
+				"value": "10"
+			},
+			{
+				"label": "Standard",
+				"value": "1"
+			},
+			{
+				"label": "x0,1",
+				"value": "0.1"
+			},
+			{
+				"label": "x0,01",
+				"value": "0.01"
+			},
+			{
+				"label": "x0.001",
+				"value": "0.001"
+			},
+			{
+				"label": "x0.0001",
+				"value": "0.0001"
+			},
+			{
+				"label": "x0.00001",
+				"value": "0.00001"
+			},
+			{
+				"label": "x0.000001",
+				"value": "0.000001"
+			},
+			{
+				"label": "x0.0000001",
+				"value": "0.0000001"
+			},
+			{
+				"label": "x0.00000001",
+				"value": "0.00000001"
+			},
+			{
+				"label": "x0.000000001",
+				"value": "0.000000001"
+			}
+		],
+		"verticalAlignOption": [
+			{
+				"label": "Oben",
+				"value": "top"
+			},
+			{
+				"label": "Mitte",
+				"value": "middle"
+			},
+			{
+				"label": "Unten",
+				"value": "bottom"
+			},
+			{
+				"label": "Benutzerdefiniert",
+				"value": "custom"
+			}
+		]
+	},
+	"chartLegend": {
+		"color": "Farbe",
+		"contentH": "Schieben Sie, um horizontalen Versatz zu ändern",
+		"contentHorizontal": "Schieben Sie, um die Breite zu ändern",
+		"contentSpacing": "Schieben Sie, um den Abstand zu ändern",
+		"contentVertival": "Schieben Sie, um vertikalen Versatz zu ändern",
+		"contentWidth": "Schieben Sie, um die Höhe zu ändern",
+		"direction": "Ausrichtung",
+		"height": "Höhe",
+		"modalName": "Legendeneinstellung",
+		"position": "Position",
+		"show": "Legende anzeigen",
+		"spacing": "Abstand",
+		"width": "Breite"
+	},
+	"chartSetting": {
+		"axis": {
+			"x": "X-Achse",
+			"y": "Y-Achse"
+		},
+		"chartType": "Diagramm Typ",
+		"collection": "Gruppe",
+		"column1": "Nummer",
+		"column2": "Spalte als Titel",
+		"data": "Daten",
+		"echarts": {
+			"area": {
+				"default": "Basisbereich",
+				"stack": "Gestapelter Bereich"
+			},
+			"bar": {
+				"default": "Einfaches Balkendiagramm",
+				"stack": "Gestapeltes Balkendiagramm"
+			},
+			"column": {
+				"default": "Einfaches Säulendiagramm",
+				"stack": "Gestapeltes Säulendiagramm"
+			},
+			"line": {
+				"default": "Einfaches Liniendiagramm",
+				"label": "Liniendiagramm mit Beschriftung",
+				"smooth": "Geglättetes Liniendiagramm"
+			},
+			"pie": {
+				"default": "Grundlegendes Tortendiagramm",
+				"ring": "Donut-Kreisdiagramm",
+				"split": "Geteiltes Kreisdiagramm"
+			}
+		},
+		"row1": "Nummer setzen",
+		"row2": "Zeile als Titel",
+		"style": "Stil",
+		"transpose": "Transponieren (Zeile/Spalte wechseln)"
+	},
+	"chartSubTitle": {
+		"content": "Schieben Sie, um den Abstand zu ändern",
+		"gap": "Die Lücke zwischen Haupttitel und Untertitel",
+		"label": "Stil",
+		"modalName": "Untertitel",
+		"placeholder": "Geben Sie den Titel ein",
+		"text": "Inhalt"
+	},
+	"chartTitle": {
+		"label": "Stil",
+		"modalName": "Titel",
+		"offsetL": "Schieben Sie, um den Versatz nach links zu ändern",
+		"offsetT": "Schieben Sie, um den Versatz oben zu ändern",
+		"placeholder": "Geben Sie den Titel ein",
+		"position": "Position",
+		"show": "Titel anzeigen",
+		"text": "Inhalt"
+	},
+	"digitOption": [
+		{
+			"label": "Standard",
+			"value": "auto"
+		},
+		{
+			"label": "Ganze Zahl"
+		},
+		{
+			"label": "1. Dezimalstelle"
+		},
+		{
+			"label": "2. Dezimalstelle"
+		},
+		{
+			"label": "3. Dezimalstelle"
+		},
+		{
+			"label": "4. Dezimalstelle"
+		},
+		{
+			"label": "5. Dezimalstelle"
+		},
+		{
+			"label": "6. Dezimalstelle"
+		},
+		{
+			"label": "7. Dezimalstelle"
+		},
+		{
+			"label": "8. Dezimalstelle"
+		}
+	],
+	"dirOptions": [
+		{
+			"label": "Horizontal",
+			"value": "horizontal"
+		},
+		{
+			"label": "Vertikale",
+			"value": "vertical"
+		}
+	],
+	"distanceOption": [
+		{
+			"label": "Standard",
+			"value": "auto"
+		},
+		{
+			"label": "Entfernt",
+			"value": "far"
+		},
+		{
+			"label": "normal",
+			"value": "normal"
+		},
+		{
+			"label": "Nah",
+			"value": "close"
+		},
+		{
+			"label": "Benutzerdefiniert",
+			"value": "custom"
+		}
+	],
+	"fontSizeList": [
+		{
+			"label": "Standard",
+			"value": "auto"
+		},
+		{
+			"label": "6px"
+		},
+		{
+			"label": "8px"
+		},
+		{
+			"label": "10px"
+		},
+		{
+			"label": "12px"
+		},
+		{
+			"label": "14px"
+		},
+		{
+			"label": "16px"
+		},
+		{
+			"label": "18px"
+		},
+		{
+			"label": "24px"
+		},
+		{
+			"label": "28px"
+		},
+		{
+			"label": "36px"
+		},
+		{
+			"label": "Benutzerdefiniert",
+			"value": "custom"
+		}
+	],
+	"fontSizeSlider": {
+		"content": "Schieben Sie, um die Schriftgröße zu ändern",
+		"tooltip": "Wählen Sie eine Schriftgröße"
+	},
+	"fontStyleIB": {
+		"bold": {
+			"des": "Fett",
+			"text": "B"
+		},
+		"italic": {
+			"des": "Kursiv",
+			"text": "I"
+		}
+	},
+	"fontStyleIBV": {
+		"bold": {
+			"des": "Fett",
+			"text": "B"
+		},
+		"italic": {
+			"des": "Kursiv",
+			"text": "I"
+		},
+		"vertical": {
+			"des": "Vertikale",
+			"text": "vertical"
+		}
+	},
+	"gradientType": {
+		"linear": "Linear",
+		"radial": "Radial"
+	},
+	"intervalOption": [
+		{
+			"label": "Standard",
+			"value": "auto"
+		},
+		{
+			"label": "jeder Tick"
+		},
+		{
+			"label": "Intervall 1"
+		},
+		{
+			"label": "Intervall 2"
+		},
+		{
+			"label": "Intervall 3"
+		},
+		{
+			"label": "Benutzerdefiniert",
+			"value": "custom"
+		}
+	],
+	"lineWeightOption": [
+		{
+			"label": "Normal",
+			"value": "custom"
+		},
+		{
+			"label": "Fett",
+			"value": "bold"
+		},
+		{
+			"label": "Sehr fett",
+			"value": "bolder"
+		}
+	],
+	"posOption": [
+		{
+			"label": "Standard",
+			"value": "auto"
+		},
+		{
+			"label": "mittig",
+			"value": "Innerhalb"
+		},
+		{
+			"label": "oben",
+			"value": "top"
+		},
+		{
+			"label": "links",
+			"value": "left"
+		},
+		{
+			"label": "rechts",
+			"value": "right"
+		},
+		{
+			"label": "unten",
+			"value": "bottom"
+		}
+	],
+	"positionOption": [
+		{
+			"label": "Oben links",
+			"value": "left-top"
+		},
+		{
+			"label": "Mitte links",
+			"value": "left-middle"
+		},
+		{
+			"label": "Unten links",
+			"value": "left-bottom"
+		},
+		{
+			"label": "Oben rechts",
+			"value": "right-top"
+		},
+		{
+			"label": "Mitte rechts",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		},
+		{
+			"label": "",
+			"value": ""
+		}
+	],
+	"ratioOption": [
+		{
+			"label": "x100"
+		},
+		{
+			"label": "x10"
+		},
+		{
+			"label": "Standard"
+		},
+		{
+			"label": "x0,1"
+		},
+		{
+			"label": "x0,01"
+		},
+		{
+			"label": "x0.001"
+		},
+		{
+			"label": "x0.0001"
+		},
+		{
+			"label": "x0.00001"
+		},
+		{
+			"label": "x0.000001"
+		},
+		{
+			"label": "x0.0000001"
+		},
+		{
+			"label": "x0.00000001"
+		},
+		{
+			"label": "x0.000000001"
+		}
+	],
+	"sizeOption": [
+		{
+			"label": "Standard",
+			"value": "auto"
+		},
+		{
+			"label": "groß",
+			"value": "big"
+		},
+		{
+			"label": "mittel",
+			"value": "medium"
+		},
+		{
+			"label": "klein",
+			"value": "small"
+		},
+		{
+			"label": "Benutzerdefiniert",
+			"value": "custom"
+		}
+	]
+}

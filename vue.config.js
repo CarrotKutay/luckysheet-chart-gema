@@ -7,6 +7,14 @@ function resolve(dir) {
 const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
 
 module.exports = {
+  pluginOptions: {
+    i18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
+      localeDir: 'locales',
+      enableInSFC: true
+    }
+  },
   lintOnSave: false,
   // productionSourceMap: !IS_PROD, // 生产环境的 source map
   chainWebpack: config => {
