@@ -793,8 +793,8 @@
 			"x": "X-Axis",
 			"y": "Y-Axis"
 		},
+		"chartTitle": "Chart Title",
 		"chartType": "chart type",
-		"collection": "Collection",
 		"column1": "Set number",
 		"column2": "Column as title",
 		"data": "Data",
@@ -822,6 +822,7 @@
 				"split": "Split pie chart"
 			}
 		},
+		"group": "Group",
 		"row1": "Set number",
 		"row2": "Row as title",
 		"style": "Style",
@@ -844,6 +845,9 @@
 		"position": "Position",
 		"show": "Show title",
 		"text": "Content"
+	},
+	"components": {
+		"defaultTitle": "Default Title"
 	},
 	"digitOption": [
 		{

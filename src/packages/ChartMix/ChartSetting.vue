@@ -8,11 +8,11 @@
         :showList="showList"
         :lang="lang"
       ></chart-list>
-      <!-- 数据选择框 -->
-      <div>
-        <!-- tab切换 -->
+      <!-- Data selection box -->
+      <div style="display: flex; flex-direction: column">
+        <!-- Tab switch -->
         <el-tabs @tab-click="handleClick" v-model="activeName" type="card">
-          <!-- 数据tab -->
+          <!-- Data tab -->
           <el-tab-pane name="data">
             <span slot="label">
               <i class="el-icon-date"></i>
@@ -24,7 +24,7 @@
                 <div>&nbsp;</div>
               </el-col>
               <el-col :span="22">
-                <!-- 图表类型 -->
+                <!-- Chart type -->
                 <div style="margin-top: 1px;">{{setItem.chartType}}</div>
                 <div style="margin-top: 10px;">
                   <el-button @click="showList = !showList" size="small" style="width:100%;">
@@ -38,7 +38,7 @@
                 </div>
 
                 <div style="margin-top:25px;"></div>
-                <!-- X轴 -->
+                <!-- x-axis -->
                 <div v-if="chartXYSeriesList">
                   <div
                     :key="item.title"
@@ -61,16 +61,16 @@
                 </div>
 
                 <div style="margin-top:25px;"></div>
-                <!-- 系列 -->
+                <!-- Collections -->
                 <div v-if="chartXYSeriesList">
                   <div
                     :key="index"
                     style="margin-top: 10px;"
                     v-for="(item,index) in chartXYSeriesList.change"
                   >
-                    <el-row :gutter="10">
-                      <el-col :span="4" style="line-height: 28px;text-align:right;">{{item.title}}:</el-col>
-                      <el-col :span="20">
+                    <el-row :gutter="10" style="display: flex">
+                      <el-col style="line-height: 28px;text-align:right; width: unset; flex-shrink: 1">{{item.title}}:</el-col>
+                      <el-col style="flex-grow: 1; width: unset" >
                         <el-dropdown
                           @command="handleSeriseCommand"
                           size="medium"
@@ -110,7 +110,7 @@
                 </div>
 
                 <div style="margin-top:25px;"></div>
-                <!-- 转置 -->
+                <!-- Transferring / Transpose -->
                 <el-row>
                   <div style="margin: 25px 0;"></div>
                   <el-checkbox
@@ -134,8 +134,8 @@
             </el-row>
           </el-tab-pane>
 
-          <!-- 样式tab -->
-          <el-tab-pane>
+          <!-- Style tab -->
+          <el-tab-pane >
             <span slot="label">
               <i class="el-icon-s-data"></i>
               {{setItem.style}}
@@ -147,7 +147,7 @@
               </el-col>
               <el-col :span="22">
                 <el-collapse>
-                  <!-- 标题组件 -->
+                  <!-- Header component -->
                   <chart-title
                     :router="'title'"
                     :chartAllType="currentChartType"
@@ -210,11 +210,8 @@ import ChartList from "./ChartList";
 import { deepCopy } from "@/utils/util";
 import { checkCurrentBoxChange, changeSeriesOrder } from "@/utils/chartUtil";
 // import { isEqual } from "lodash";
-import isEqual from 'lodash/isEqual';
-import { chartComponent, chartOptions } from "@/data/chartJson";
+import { chartComponent } from "@/data/chartJson";
 import { mapState, mapActions } from "vuex";
-import transCN from "@/data/cn";
-import transEN from "@/data/en";
 
 import ChartTitle from './chartChips/chart/ChartTitle'
 import ChartSubTitle from './chartChips/chart/ChartSubTitle'
@@ -222,6 +219,7 @@ import ChartCursor from './chartChips/chart/ChartCursor'
 import ChartLegend from './chartChips/chart/ChartLegend'
 import ChartAxis from './chartChips/chart/ChartAxis'
 import i18n from "@/i18n";
+import {deleteChart} from "@/utils/exportUtil";
 
 export default {
   name: "ChartSetting",
@@ -254,6 +252,7 @@ export default {
       axisOption: deepCopy(chartComponent.axis), //坐标轴设置
       showList: false,
       setItem: {
+        style: i18n.t('chartSetting.style'),
         echarts: {
           line: {
             default: '默认折线图'
@@ -264,12 +263,7 @@ export default {
     };
   },
   mounted() {
-    if (this.lang == "ch") {
-      this.setItem = transCN["chartSetting"];
-      return;
-    }
-    this.setItem = transEN["chartSetting"];
-    console.dir(this.setItem);
+    this.setItem = i18n.t('chartSetting');
   },
   watch: {
     chartOptions: {
@@ -290,12 +284,8 @@ export default {
         this.axisOption = chartOption.defaultOption.axis;
       },
     },
-    lang(val) {
-      if (val == "ch") {
-        this.setItem = transCN["chartSetting"];
-        return;
-      }
-      this.setItem = transEN["chartSetting"];
+    lang() {
+      this.setItem = i18n.t('chartSetting');
     },
   },
   computed: {
@@ -551,6 +541,10 @@ export default {
       if (this.currentChartIndex == null) {
         return null;
       }
+      if (this.chartLists[this.currentChartIndex] === undefined) {
+        deleteChart(this.currentChartIndex)
+        return null;
+      }
       return this.chartLists[this.currentChartIndex].chartOptions
         .chartDataCache;
       // },
@@ -595,7 +589,7 @@ export default {
           for (var i = 0; i < this.currentChartDataCache.label.length; i++) {
             var trueIndex = chartDataSeriesOrder[i];
             ret.change[trueIndex] = {
-              title: i18n.t('chartSetting.collection') + (trueIndex + 1),
+              title: i18n.t('chartSetting.group') + ' ' + (trueIndex + 1),
               index: trueIndex,
               type: valueType[this.currentChartDataCache.series_tpye[i]],
               field: this.currentChartDataCache.label[i],
@@ -716,7 +710,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='scss'>
-@import "@/assets/css/chartMix.scss";
+@import "../../assets/css/chartMix";
 
 .chartSetting {
   width: 100%;

@@ -444,9 +444,11 @@ function changeChartRange(
 
 function changeChartCellData(chart_id, chartData) {
 
-    let index = store.state.chartSetting.chartLists.findIndex(item => item.chart_id == chart_id)
+    let index = store.state.chartSetting.chartLists.findIndex(item => item.chart_id === chart_id)
     store.state.chartSetting.currentChartIndex = index
-
+    if (store.state.chartSetting.chartLists[index] === undefined) {
+        return;
+    }
     var chart_json = store.state.chartSetting.chartLists[index].chartOptions
 
     var chartAllType = chart_json.chartAllType;

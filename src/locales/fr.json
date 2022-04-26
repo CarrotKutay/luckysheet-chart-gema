@@ -793,8 +793,8 @@
 			"x": "",
 			"y": ""
 		},
+		"chartTitle": "",
 		"chartType": "Type de graphique",
-		"collection": "Collection",
 		"column1": "Numéro de série",
 		"column2": "Colonne comme titre",
 		"data": "Les données",
@@ -822,6 +822,7 @@
 				"split": "Diagramme à secteurs fractionné"
 			}
 		},
+		"group": "Collection",
 		"row1": "Numéro de série",
 		"row2": "Ligne comme titre",
 		"style": "Style",
@@ -844,6 +845,9 @@
 		"position": "Position",
 		"show": "Montrer le titre",
 		"text": "Contenu"
+	},
+	"components": {
+		"defaultTitle": ""
 	},
 	"digitOption": [
 		{

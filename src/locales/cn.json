@@ -793,8 +793,8 @@
 			"x": "x轴",
 			"y": "y轴"
 		},
+		"chartTitle": "图表标题",
 		"chartType": "图表类型",
-		"collection": "系列",
 		"column1": "设选中项第",
 		"column2": "列为标题",
 		"data": "数据",
@@ -822,6 +822,7 @@
 				"split": "分离型饼图"
 			}
 		},
+		"group": "系列",
 		"row1": "设选中项第",
 		"row2": "行为标题",
 		"style": "样式",
@@ -844,6 +845,9 @@
 		"position": "标题位置",
 		"show": "显示主标题",
 		"text": "默认标题"
+	},
+	"components": {
+		"defaultTitle": "默认标题"
 	},
 	"digitOption": [
 		{

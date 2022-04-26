@@ -238,7 +238,7 @@ function resizeChartAll(){
 
 // delete chart
 function deleteChart(chart_id) {
-    let index = ChartSetting.chartLists.findIndex(item => item.chart_id == chart_id)
+    let index = ChartSetting.chartLists.findIndex(item => item.chart_id === chart_id)
     ChartSetting.chartLists.splice(index, 1)
     ChartSetting.currentChartIndex--
     if (ChartSetting.currentChartIndex < 0) {
@@ -251,7 +251,7 @@ function deleteChart(chart_id) {
 }
 
 function getChartJson(chart_id){
-    let index = ChartSetting.chartLists.findIndex(item => item.chart_id == chart_id)
+    let index = ChartSetting.chartLists.findIndex(item => item.chart_id === chart_id)
     return  ChartSetting.chartLists[index].chartOptions;
 }
 

@@ -793,8 +793,8 @@
 			"x": "",
 			"y": ""
 		},
+		"chartTitle": "",
 		"chartType": "vrsta grafikona",
-		"collection": "Zbirka",
 		"column1": "nastavite številko",
 		"column2": "Stolpec kot naslov",
 		"data": "Podatki",
@@ -822,6 +822,7 @@
 				"split": "Razdeljeni tortni grafikon"
 			}
 		},
+		"group": "Zbirka",
 		"row1": "nastavite številko",
 		"row2": "Vrstica kot naslov",
 		"style": "Slog",
@@ -844,6 +845,9 @@
 		"position": "Položaj",
 		"show": "Prikaži naslov",
 		"text": "Vsebina"
+	},
+	"components": {
+		"defaultTitle": ""
 	},
 	"digitOption": [
 		{

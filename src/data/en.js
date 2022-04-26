@@ -1,7 +1,7 @@
 let obj = {
     'chartSetting': {
         data: 'data',
-        chartType: 'chartType',
+        chartType: 'Chart Type',
         transpose: 'transpose(switch row/column)',
         row1: 'set number',
         row2: 'row as title',

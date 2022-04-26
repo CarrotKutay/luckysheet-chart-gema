@@ -793,8 +793,8 @@
 			"x": "X-Achse",
 			"y": "Y-Achse"
 		},
+		"chartTitle": "Diagrammtitel",
 		"chartType": "Diagramm Typ",
-		"collection": "Gruppe",
 		"column1": "Nummer",
 		"column2": "Spalte als Titel",
 		"data": "Daten",
@@ -822,6 +822,7 @@
 				"split": "Geteiltes Kreisdiagramm"
 			}
 		},
+		"group": "Gruppe",
 		"row1": "Nummer setzen",
 		"row2": "Zeile als Titel",
 		"style": "Stil",
@@ -844,6 +845,9 @@
 		"position": "Position",
 		"show": "Titel anzeigen",
 		"text": "Inhalt"
+	},
+	"components": {
+		"defaultTitle": "Standart Title"
 	},
 	"digitOption": [
 		{

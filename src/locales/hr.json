@@ -793,8 +793,8 @@
 			"x": "",
 			"y": ""
 		},
+		"chartTitle": "",
 		"chartType": "Vrsta grafikona",
-		"collection": "",
 		"column1": "postaviti broj",
 		"column2": "Kolona kao naslov",
 		"data": "Podaci",
@@ -822,6 +822,7 @@
 				"split": "Podijeljeni tortni grafikon"
 			}
 		},
+		"group": "",
 		"row1": "postaviti broj",
 		"row2": "Red kao naslov",
 		"style": "Stil",
@@ -844,6 +845,9 @@
 		"position": "Položaj",
 		"show": "Prikaži naslov",
 		"text": "Sadržaj"
+	},
+	"components": {
+		"defaultTitle": ""
 	},
 	"digitOption": [
 		{

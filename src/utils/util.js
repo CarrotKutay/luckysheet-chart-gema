@@ -719,7 +719,7 @@ function getChartDataCache(
                     ctitleData = []
                 if (ctitle == null) {
                     for (var r = 0; r <= content.row[1] - content.row[0]; r++) {
-                        ctitleData.push(i18n.t('chartSetting.collection') + (r + 1)) //用系列1、系列2、系列3 样式表示
+                        ctitleData.push(i18n.t('chartSetting.collection') + ' ' + (r + 1)) //用系列1、系列2、系列3 样式表示
                     }
                     ret.label = ctitleData
                 }
@@ -771,7 +771,7 @@ function getChartDataCache(
                     ctitleData = []
                 if (ctitle == null) {
                     for (var r = 0; r <= content.row[1] - content.row[0]; r++) {
-                        ctitleData.push(i18n.t('chartSetting.collection') + (r + 1)) //用系列1、系列2、系列3 样式表示
+                        ctitleData.push(i18n.t('chartSetting.collection') + ' ' + (r + 1)) //用系列1、系列2、系列3 样式表示
                     }
                     ret.label = ctitleData
                 }
@@ -895,7 +895,7 @@ function getChartDataCache(
                     }
 
                     for (var c = 0; c <= content.column[1] - content.column[0]; c++) {
-                        rtitleData.push(i18n.t('chartSetting.collection') + (c + 1)) //行标题用系列1、系列2、系列3 样式表示
+                        rtitleData.push(i18n.t('chartSetting.collection') + ' ' + (c + 1)) //行标题用系列1、系列2、系列3 样式表示
                     }
                     ret.label = rtitleData
                 }
@@ -991,7 +991,7 @@ function getChartDataCache(
                     }
 
                     for (var c = 0; c <= content.column[1] - content.column[0]; c++) {
-                        rtitleData.push(i18n.t('chartSetting.collection') + (c + 1)) //用系列1、系列2、系列3 样式表示
+                        rtitleData.push(i18n.t('chartSetting.collection') + ' ' + (c + 1)) //用系列1、系列2、系列3 样式表示
                     }
                     ret.label = rtitleData
                 }
