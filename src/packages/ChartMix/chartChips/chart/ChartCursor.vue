@@ -2,7 +2,6 @@
   <el-collapse-item name="4">
     <template slot="title">
       {{setItem.modalName}}
-      <i class="iconfont icon-biaoti"></i>
     </template>
     <!-- 显示提示框 -->
     <chart-base-switch :switchValue.sync="cursor.show">
@@ -66,7 +65,7 @@
       <div slot="select">{{setItem.position}}</div>
     </chart-base-select>
 
-    <!-- 鼠标提示format -->
+<!--     鼠标提示format
     <el-row style="margin-top: 15px;">
       <el-col :span="2">
         <i class="el-icon-menu"></i>
@@ -74,14 +73,14 @@
       <el-col :span="8">{{setItem.suffix}}</el-col>
     </el-row>
 
-    <el-row :key="i" style="margin-top: 15px;" v-for="(item , i) in seriesOption">
+   <el-row :key="i" style="margin-top: 15px;" v-for="(item , i) in seriesOption">
       <el-col :span="6">{{item}}</el-col>
       <el-col :span="4">
-        <!-- 鼠标提示后缀 -->
+        &lt;!&ndash; 鼠标提示后缀 &ndash;&gt;
         <chart-base-input :hideCol="true" :placeholder="setItem.placeholder"></chart-base-input>
       </el-col>
       <el-col :span="6">
-        <!-- 数值比例 -->
+        &lt;!&ndash; 数值比例 &ndash;&gt;
         <chart-base-select
           :tooltip="setItem.ratio"
           :selectOption="ratioOption"
@@ -90,7 +89,7 @@
         ></chart-base-select>
       </el-col>
       <el-col :span="6">
-        <!-- 小数位数 -->
+        &lt;!&ndash; 小数位数 &ndash;&gt;
         <chart-base-select
           :tooltip="setItem.digit"
           :selectOption="digitOption"
@@ -98,7 +97,7 @@
           :hideCol="true"
         ></chart-base-select>
       </el-col>
-    </el-row>
+    </el-row>&ndash;&gt;-->
   </el-collapse-item>
 </template>
 
@@ -121,7 +120,7 @@ export default {
   },
   data() {
     return {
-      cursor: {}, //鼠标提示设置
+      cursor: {}, //courser settings
       fontSizeOption: i18n.t('fontSIzeOption'),
       lineStyleOption: i18n.t('lineStyleOption'),
       lineWeightOption: i18n.t('lineWeightOption'),
@@ -135,10 +134,6 @@ export default {
     };
   },
   mounted() {
-    /*if (this.lang == "ch") {
-      this.setItem = transCN["chartCursor"];
-      return;
-    }*/
     this.setItem = i18n.t('chartCursor');
   },
   watch: {
@@ -162,22 +157,18 @@ export default {
       deep: true,
       immediate: true,
     },
-    lang(val) {
-      /*if (val == "ch") {
-        this.setItem = transCN["chartCursor"];
-        return;
-      }*/
+    lang() {
       this.setItem = i18n.t('chartCursor');
     },
   },
   computed: {
-    seriesOption() {
+    /*seriesOption() {
       var arr = [];
       for (var i = 0; i < this.cursor.format.length; i++) {
         arr.push(this.cursor.format[i].seriesName);
       }
       return arr;
-    },
+    },*/
   },
   methods: {
     ...t.mapActions("chartSetting", ["updateChartItem"]),

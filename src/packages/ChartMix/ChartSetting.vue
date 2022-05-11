@@ -1,6 +1,6 @@
 <template>
   <div class="chartSetting">
-    <div style="overflow: hidden;height: 100%;">
+    <div style="overflow-y: scroll;height: 100%;">
       <!-- 图表类型 -->
       <chart-list
         :chartAllType="currentChartType"
@@ -9,7 +9,7 @@
         :lang="lang"
       ></chart-list>
       <!-- Data selection box -->
-      <div style="display: flex; flex-direction: column">
+      <div style="display: flex; flex-direction: column; overflow-y: inherit;">
         <!-- Tab switch -->
         <el-tabs @tab-click="handleClick" v-model="activeName" type="card">
           <!-- Data tab -->

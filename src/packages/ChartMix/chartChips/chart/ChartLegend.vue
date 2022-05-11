@@ -2,7 +2,6 @@
   <el-collapse-item name="3">
         <template slot="title">
       {{setItem.modalName}}
-      <i class="iconfont icon-biaoti"></i>
     </template>
 
     <!-- 图例显示 -->

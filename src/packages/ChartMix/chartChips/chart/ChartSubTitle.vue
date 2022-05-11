@@ -3,7 +3,6 @@
   <el-collapse-item name="2">
     <template slot="title">
       {{setItem.modalName}}&nbsp;&nbsp;&nbsp;&nbsp;
-      <i class="iconfont icon-biaoti"></i>
     </template>
 
     <!-- 副标题内容 -->
@@ -80,7 +79,7 @@ export default {
       deep: true,
       immediate: true,
     },
-    lang(val) {
+    lang() {
       this.setItem = i18n.t('chartSubTitle');
     },
   },

@@ -2,7 +2,6 @@
   <el-collapse-item name="6">
     <template slot="title">
       {{setItem.modalName}}
-      <i class="iconfont icon-biaoti"></i>
     </template>
     <!-- 选择坐标轴 -->
     <chart-base-select :selectOption="axisGroup" :selectValue.sync="axis.axisType">
@@ -349,9 +348,9 @@ export default {
       if (this.chartType == "bar" && this.chartStyle != "compare") {
         return i18n.t(`chartAxis.axisGroup.barAndCompare`);
       } else if (this.chartStyle == "compare") {
-        return i18n.t(`chartAxis.axisGroup.compare`);;
+        return i18n.t(`chartAxis.axisGroup.compare`);
       } else {
-        return i18n.t(`chartAxis.axisGroup.default`);;
+        return i18n.t(`chartAxis.axisGroup.default`);
       }
     },
     showLabel() {
