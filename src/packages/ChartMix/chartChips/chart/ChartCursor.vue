@@ -121,7 +121,7 @@ export default {
   data() {
     return {
       cursor: {}, //courser settings
-      fontSizeOption: i18n.t('fontSIzeOption'),
+      fontSizeOption: i18n.t('fontSizeOption'),
       lineStyleOption: i18n.t('lineStyleOption'),
       lineWeightOption: i18n.t('lineWeightOption'),
       posOption: i18n.t('posOption'),

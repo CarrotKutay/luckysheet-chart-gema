@@ -28,6 +28,7 @@ const install = function (Vue, options = {}) {
 
     if (!install.storeRegistered) {
         // register store
+        console.log(options)
         if (!options.store) {
             console.log('Please provide a store!!')
         } else {
