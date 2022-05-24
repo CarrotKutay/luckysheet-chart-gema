@@ -85,7 +85,7 @@ function createChart(render, chartData, chart_id, rangeArray, rangeTxt) {
         },
         computed: {
             options() {
-                let chartJson = ChartSetting.chartLists.find(item => item.chart_id == this.chart_Id)
+                let chartJson = ChartSetting.chartLists.find(item => item.chart_id === this.chart_Id)
                 if (chartJson) {
                     return chartJson.chartOptions
                 } else {
@@ -93,7 +93,7 @@ function createChart(render, chartData, chart_id, rangeArray, rangeTxt) {
                 }
             },
             active() {
-                let chartJson = ChartSetting.chartLists.find(item => item.chart_id == this.chart_Id)
+                let chartJson = ChartSetting.chartLists.find(item => item.chart_id === this.chart_Id)
                 if (chartJson) {
                     return chartJson.active
                 } else {
@@ -101,7 +101,7 @@ function createChart(render, chartData, chart_id, rangeArray, rangeTxt) {
                 }
             }
         },
-        template: `<ChartRender :chartOptions="options" :chart_id="chart_Id" :active="active"></ChartRneder>`
+        template: `<ChartRender :chartOptions="options" :chart_id="chart_Id" :active="active"></ChartRender>`
     })
 
     return {
@@ -208,21 +208,21 @@ function insertNewChart(
 
 // highlight current chart
 function highlightChart(chart_id) {
-    let index = ChartSetting.chartLists.findIndex(item => item.chart_id == chart_id)
+    let index = ChartSetting.chartLists.findIndex(item => item.chart_id === chart_id)
     ChartSetting.currentChartIndex = index
     return ChartSetting.chartLists[ChartSetting.currentChartIndex].chartOptions
 }
 
 // resize chart
 function resizeChart(chart_id) {
-    let index = ChartSetting.chartLists.findIndex(item => item.chart_id == chart_id)
+    let index = ChartSetting.chartLists.findIndex(item => item.chart_id === chart_id)
     var chartAllType = ChartSetting.chartLists[index].chartOptions.chartAllType;
     var chartAllTypeArray = chartAllType.split("|");
     var chartPro = chartAllTypeArray[0],
         chartType = chartAllTypeArray[1],
         chartStyle = chartAllTypeArray[2];
 
-    if (chartPro == "echarts") {
+    if (chartPro === "echarts") {
         echarts.getInstanceById($("#" + chart_id).attr("_echarts_instance_")).resize();
     } 
 }
@@ -230,7 +230,7 @@ function resizeChart(chart_id) {
 function resizeChartAll(){
     for(let i = 0; i < ChartSetting.chartLists.length; i++){
         let chartJson = ChartSetting.chartLists[i].chartOptions
-        if(chartJson.chartAllType.split('|')[0] == 'echarts'){
+        if(chartJson.chartAllType.split('|')[0] === 'echarts'){
             echarts.getInstanceById($('#' + chartJson.chart_id).attr('_echarts_instance_')).resize()
         }
     }

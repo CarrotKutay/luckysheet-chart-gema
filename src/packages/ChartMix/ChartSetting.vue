@@ -99,7 +99,7 @@
                               <i
                                 class="iconfont icon-dagou"
                                 style="float:right;"
-                                v-if="item.id==ditem.id"
+                                v-if="item.id===ditem.id"
                               ></i>
                             </el-dropdown-item>
                           </el-dropdown-menu>
@@ -180,7 +180,7 @@
 
                   <!-- 坐标轴组件 -->
                   <chart-axis
-                    v-if="currentChartType.split('|')[1]!='pie'"
+                    v-if="currentChartType.split('|')[1]!=='pie'"
                     :router="'axis'"
                     :axisOption="axisOption"
                     :chartAllType="currentChartType"
@@ -270,8 +270,8 @@ export default {
       handler: function (chartOption, oldV) {
         //此处必须使用function,不能用箭头函数
         if (
-          chartOption == undefined ||
-          !chartOption.hasOwnProperty("chartAllType")
+          chartOption === undefined ||
+          !chartOption.hasOwn("chartAllType")
         ) {
           return;
         }
@@ -315,26 +315,18 @@ export default {
       },
     },
     checkRowDisabled() {
-      if (
-        this.currentChartIndex == null ||
-        !this.chartLists[this.currentChartIndex].chartOptions.chartData ||
-        this.chartLists[this.currentChartIndex].chartOptions.chartData.length ==
-          1
-      ) {
-        return true;
-      }
-      return false;
+      return this.currentChartIndex == null ||
+          !this.chartLists[this.currentChartIndex].chartOptions.chartData ||
+          this.chartLists[this.currentChartIndex].chartOptions.chartData.length ===
+          1;
+
     },
     checkColDisabled() {
-      if (
-        this.currentChartIndex == null ||
-        !this.chartLists[this.currentChartIndex].chartOptions.chartData ||
-        this.chartLists[this.currentChartIndex].chartOptions.chartData.length ==
-          1
-      ) {
-        return true;
-      }
-      return false;
+      return this.currentChartIndex == null ||
+          !this.chartLists[this.currentChartIndex].chartOptions.chartData ||
+          this.chartLists[this.currentChartIndex].chartOptions.chartData.length ===
+          1;
+
     },
     currentRangeConfigCheck: {
       get() {
@@ -362,178 +354,179 @@ export default {
       return this.currentChartType.split("|")[2];
     },
     //图表选项的文本
-    chartTypeTxt: function () {
-
-      var head, main, icon;
-      if (this.chart_pro == "echarts") {
+    chartTypeTxt() {
+      let head, main, icon;
+      if (this.chart_pro === "echarts") {
         head = "echarts";
-      } else if (this.chart_pro == "highcharts") {
+      } else if (this.chart_pro === "highcharts") {
         head = "highcharts";
       }
 
-      if (this.chart_type == "line") {
-        if (this.chart_style == "default") {
+      if (this.chart_type === "line") {
+        if (this.chart_style === "default") {
           main = this.setItem.echarts.line.default;
         }
-        if (this.chart_style == "smooth") {
+        if (this.chart_style === "smooth") {
           main = this.setItem.echarts.line.smooth;
         }
-        if (this.chart_style == "label") {
+        if (this.chart_style === "label") {
           main = this.setItem.echarts.line.label;
         }
-        if (this.chart_style == "doublex") {
+        if (this.chart_style === "doublex") {
           main = "双Y轴折线图";
         }
-        if (this.chart_style == "linemix") {
+        if (this.chart_style === "linemix") {
           main = "折线柱状混合图";
         }
         icon = "icon-tubiaozhexiantu";
         return [icon, head + " - " + main];
-      } else if (this.chart_type == "area") {
-        if (this.chart_style == "default") {
+      } else if (this.chart_type === "area") {
+        if (this.chart_style === "default") {
           main = this.setItem.echarts.area.default;
         }
-        if (this.chart_style == "stack") {
+        if (this.chart_style === "stack") {
           main = this.setItem.echarts.area.stack;
         }
-        if (this.chart_style == "stackRatio") {
+        if (this.chart_style === "stackRatio") {
           main = "带标签的堆叠面积图";
         }
         icon = "icon-fsux_tubiao_duijimianjitu";
         return [icon, head + " - " + main];
-      } else if (this.chart_type == "column") {
-        if (this.chart_style == "default") {
+      } else if (this.chart_type === "column") {
+        if (this.chart_style === "default") {
           main = this.setItem.echarts.column.default;
         }
-        if (this.chart_style == "stack") {
+        if (this.chart_style === "stack") {
           main = this.setItem.echarts.column.stack;
         }
-        if (this.chart_style == "stackRatio") {
+        if (this.chart_style === "stackRatio") {
           main = "百分比堆叠柱状图";
         }
-        if (this.chart_style == "costComposition") {
+        if (this.chart_style === "costComposition") {
           main = "费用构成柱状图";
         }
-        if (this.chart_style == "polarStack") {
+        if (this.chart_style === "polarStack") {
           main = "极坐标系下的堆叠柱状图";
         }
-        if (this.chart_style == "bar3DPunchCard") {
+        if (this.chart_style === "bar3DPunchCard") {
           main = "3D柱状图";
         }
-        if (this.chart_style == "contain") {
+        if (this.chart_style === "contain") {
           main = "比例图";
         }
-        if (this.chart_style == "special") {
+        if (this.chart_style === "special") {
           main = "显示百分比图";
         }
-        if (this.chart_style == "doubleX") {
+        if (this.chart_style === "doubleX") {
           main = "双X轴";
         }
         icon = "icon-chart";
         return [icon, head + " - " + main];
-      } else if (this.chart_type == "bar") {
-        if (this.chart_style == "default") {
+      } else if (this.chart_type === "bar") {
+        if (this.chart_style === "default") {
           main = this.setItem.echarts.bar.default;
         }
-        if (this.chart_style == "stack") {
+        if (this.chart_style === "stack") {
           main = this.setItem.echarts.bar.stack;
         }
-        if (this.chart_style == "stackRatio") {
+        if (this.chart_style === "stackRatio") {
           main = "百分比堆叠条形图";
         }
-        if (this.chart_style == "compare") {
+        if (this.chart_style === "compare") {
           main = "条形比较图";
         }
-        if (this.chart_style == "contain") {
+        if (this.chart_style === "contain") {
           main = "比例图";
         }
         icon = "icon-fsux_tubiao_duijizhuzhuangtu1";
         return [icon, head + " - " + main];
-      } else if (this.chart_type == "pie") {
-        if (this.chart_style == "default") {
+      } else if (this.chart_type === "pie") {
+        if (this.chart_style === "default") {
           main = this.setItem.echarts.pie.default;
         }
-        if (this.chart_style == "split") {
+        if (this.chart_style === "split") {
           main = this.setItem.echarts.pie.split;
         }
-        if (this.chart_style == "ring") {
+        if (this.chart_style === "ring") {
           main = this.setItem.echarts.pie.ring;
         }
-        if (this.chart_style == "ringnest") {
+        if (this.chart_style === "ringnest") {
           main = "环形嵌套图";
         }
-        if (this.chart_style == "3D") {
+        if (this.chart_style === "3D") {
           main = "3D饼图";
         }
-        if (this.chart_style == "rose") {
-          if (this.chart_pro == "echarts") {
+        if (this.chart_style === "rose") {
+          if (this.chart_pro === "echarts") {
             main = "南丁格玫瑰图";
-          } else if (this.chart_pro == "highcharts") {
+          } else if (this.chart_pro === "highcharts") {
             main = "可变宽度的环形图";
           }
         }
         icon = "icon-fsux_tubiao_nandingmeiguitu";
         return [icon, head + " - " + main];
       }
-      if (this.chart_type == "scatter") {
-        if (this.chart_style == "default") {
+      if (this.chart_type === "scatter") {
+        if (this.chart_style === "default") {
           main = "默认散点图";
         }
-        if (this.chart_style == "label") {
+        if (this.chart_style === "label") {
           main = "带标签的散点图";
         }
-        if (this.chart_style == "zoom") {
+        if (this.chart_style === "zoom") {
           main = "自由缩放散点图";
         }
-        if (this.chart_style == "matrix") {
+        if (this.chart_style === "matrix") {
           main = "散点图矩阵";
         }
         icon = "icon-fsux_tubiao_qipaotu";
         return [icon, head + " - " + main];
       }
-      if (this.chart_type == "radar") {
-        if (this.chart_style == "default") {
+      if (this.chart_type === "radar") {
+        if (this.chart_style === "default") {
           main = "默认雷达图";
         }
         icon = "icon-leidatu";
         return [icon, head + " - " + main];
-      } else if (this.chart_type == "funnel") {
-        if (this.chart_style == "default") {
+      } else if (this.chart_type === "funnel") {
+        if (this.chart_style === "default") {
           main = "默认漏斗图";
         }
-        if (this.chart_style == "inverse") {
+        if (this.chart_style === "inverse") {
           main = "逆漏斗图";
         }
         icon = "icon-fsux_tubiao_loudoutu";
         return [icon, head + " - " + main];
-      } else if (this.chart_type == "gauge") {
-        if (this.chart_style == "default") {
+      } else if (this.chart_type === "gauge") {
+        if (this.chart_style === "default") {
           main = "仪表盘";
         }
-        if (this.chart_style == "percent") {
+        if (this.chart_style === "percent") {
           main = "百分比仪表盘";
         }
-        if (this.chart_style == "solid") {
+        if (this.chart_style === "solid") {
           main = "活动图";
         }
         icon = "icon-fsux_tubiao_yibiaopan";
         return [icon, head + " - " + main];
-      } else if (this.chart_type == "map") {
-        if (this.chart_style == "china") {
+      } else if (this.chart_type === "map") {
+        if (this.chart_style === "china") {
           main = "中国地图";
-        } else if (this.chart_style == "province") {
+        } else if (this.chart_style === "province") {
           main = "省份地图";
-        } else if (this.chart_style == "cnscatter") {
+        } else if (this.chart_style === "cnscatter") {
           main = "中国地图散点图";
-        } else if (this.chart_style == "pvscatter") {
+        } else if (this.chart_style === "pvscatter") {
           main = "省份地图散点图";
-        } else if (this.chart_style == "percent") {
+        } else if (this.chart_style === "percent") {
           main = "百分比地图";
         }
         icon = "icon-fsux_tubiao_ditu";
         return [icon, head + " - " + main];
-      } else if (this.chart_type == "earth") {
+      } else if (this.chart_type === "earth") {
         return [icon, head + " - " + "3D 地球"];
+      } else {
+        return [icon, head + " - " + main]
       }
     },
     currentChartDataCache() {
@@ -559,23 +552,23 @@ export default {
       let chartDataSeriesOrder = this.chartLists[this.currentChartIndex]
         .chartOptions.chartDataSeriesOrder;
 
-      var chartAllTypeArray = this.currentChartType.split("|");
-      var chartPro = chartAllTypeArray[0],
-        chartType = chartAllTypeArray[1],
-        chartStyle = chartAllTypeArray[2];
+      const chartAllTypeArray = this.currentChartType.split("|");
+      const chartPro = chartAllTypeArray[0],
+          chartType = chartAllTypeArray[1],
+          chartStyle = chartAllTypeArray[2];
 
-      var valueType = {
+      const valueType = {
         num: "icon-shuzi",
         string: "icon-format_icon",
         date: "icon-date",
       };
 
-      var ret = { fix: [], change: [], option: [] };
+      const ret = {fix: [], change: [], option: []};
       if (
-        chartType == "line" ||
-        chartType == "column" ||
-        chartType == "area" ||
-        chartType == "scatter"
+        chartType === "line" ||
+        chartType === "column" ||
+        chartType === "area" ||
+        chartType === "scatter"
       ) {
         if (this.currentChartDataCache.title != null) {
           ret.fix.push({
@@ -586,8 +579,8 @@ export default {
         }
 
         if (this.currentChartDataCache.label != null) {
-          for (var i = 0; i < this.currentChartDataCache.label.length; i++) {
-            var trueIndex = chartDataSeriesOrder[i];
+          for (let i = 0; i < this.currentChartDataCache.label.length; i++) {
+            const trueIndex = chartDataSeriesOrder[i];
             ret.change[trueIndex] = {
               title: i18n.t('chartSetting.group') + ' ' + (trueIndex + 1),
               index: trueIndex,
@@ -627,16 +620,16 @@ export default {
   methods: {
     ...mapActions("chartSetting", ["updateChartItemChartlistOne"]),
     handleClick(tab) {
-      if (tab.index != 0) {
+      if (tab.index !== 0) {
         this.showList = false;
       }
     },
     //列/行头部的标题例如列A、行1
     getColRowCheckTxt: function (isRow) {
       if (!isRow) {
-        var txt = "";
+        let txt = "";
         if (
-          this.currentRangeColCheck.range[0] ==
+          this.currentRangeColCheck.range[0] ===
           this.currentRangeColCheck.range[1]
         ) {
           txt = this.currentRangeColCheck.range[0] + 1;
@@ -651,9 +644,9 @@ export default {
 
         return txt;
       } else {
-        var txt = "";
+        let txt = "";
         if (
-          this.currentRangeRowCheck.range[0] ==
+          this.currentRangeRowCheck.range[0] ===
           this.currentRangeRowCheck.range[1]
         ) {
           txt = this.currentRangeRowCheck.range[0] + 1;
@@ -671,11 +664,11 @@ export default {
     },
     // 转置行列操作
     checkBoxChange: function () {
-      var chart_id = this.chartLists[this.currentChartIndex].chartOptions
-        .chart_id;
-      var rangeRowCheck = this.currentRangeRowCheck;
-      var rangeColCheck = this.currentRangeColCheck;
-      var rangeConfigCheck = this.currentRangeConfigCheck;
+      const chart_id = this.chartLists[this.currentChartIndex].chartOptions
+          .chart_id;
+      const rangeRowCheck = this.currentRangeRowCheck;
+      const rangeColCheck = this.currentRangeColCheck;
+      const rangeConfigCheck = this.currentRangeConfigCheck;
 
       checkCurrentBoxChange(
         chart_id,
@@ -686,13 +679,13 @@ export default {
     },
     //系列列表的下拉菜单操作
     handleSeriseCommand: function (command) {
-      var series = command.series,
-        option = command.option;
-      var newOrder = deepCopy(this.currentChartDataSeriesOrder);
-      var newid = option.id,
-        newTrueIndex = series.index;
-      var exchangeid = series.id,
-        exchangeTrueIndex = newOrder[newid];
+      const series = command.series,
+          option = command.option;
+      const newOrder = deepCopy(this.currentChartDataSeriesOrder);
+      const newid = option.id,
+          newTrueIndex = series.index;
+      const exchangeid = series.id,
+          exchangeTrueIndex = newOrder[newid];
 
       newOrder[newid] = newTrueIndex;
       newOrder[exchangeid] = exchangeTrueIndex;
