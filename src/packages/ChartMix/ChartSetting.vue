@@ -201,12 +201,6 @@
 
 <script>
 import ChartList from "./ChartList";
-// const ChartTitle = () => import("./chartChips/chart/ChartTitle");
-// const ChartSubTitle = () => import("./chartChips/chart/ChartSubTitle");
-// const ChartCursor = () => import("./chartChips/chart/ChartCursor");
-// const ChartLegend = () => import("./chartChips/chart/ChartLegend");
-// const ChartAxis = () => import("./chartChips/chart/ChartAxis");
-
 import { deepCopy } from "@/utils/util";
 import { checkCurrentBoxChange, changeSeriesOrder } from "@/utils/chartUtil";
 // import { isEqual } from "lodash";
@@ -271,7 +265,7 @@ export default {
         //此处必须使用function,不能用箭头函数
         if (
           chartOption === undefined ||
-          !chartOption.hasOwn("chartAllType")
+          !chartOption.hasOwnProperty("chartAllType")
         ) {
           return;
         }
@@ -282,6 +276,8 @@ export default {
         this.cursorOption = chartOption.defaultOption.tooltip;
         this.legendOption = chartOption.defaultOption.legend;
         this.axisOption = chartOption.defaultOption.axis;
+        this.top = chartOption.top;
+        this.left = chartOption.left;
       },
     },
     lang() {

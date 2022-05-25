@@ -141,8 +141,8 @@ function insertNewChart(
 
     chart_json.height = height
     chart_json.width = width
-    chart_json.left = left
-    chart_json.top = top
+    chart_json.left = left ? left : chartOptions.left;
+    chart_json.top = top ? top : chartOptions.top;
 
     //按照图表类型得到图表的默认设置
     var defaultOptionIni = chartOptions.defaultOption

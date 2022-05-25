@@ -41,7 +41,7 @@ export default {
      * 修改state中chartlist
      */
     [UPDATE_CHART_ITEM_CHARTLIST](state , params){
-        let index = state.chartLists.findIndex(item => item.chart_id == params.chart_id)
+        let index = state.chartLists.findIndex(item => item.chart_id === params.chart_id)
         state.chartLists[index].chartOptions = $.extend(state.chartLists[index].chartOptions , params)
     },
     /**
@@ -49,7 +49,7 @@ export default {
      * 修改state中chartlist中chartoptions的某一项
      */
     [UPDATE_CHART_ITEM_CHARTLIST_ONE](state , params){
-        let index = state.chartLists.findIndex(item => item.chart_id == params.chart_id)
+        let index = state.chartLists.findIndex(item => item.chart_id === params.chart_id)
         state.chartLists[index].chartOptions[params.key] = params.value
     },
     /**
